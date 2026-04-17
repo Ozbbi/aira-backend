@@ -1,0 +1,92 @@
+### Health Check
+GET http://localhost:3000/
+
+### Create User
+POST http://localhost:3000/api/users/create
+Content-Type: application/json
+
+{
+  "name": "Alex",
+  "email": "alex@example.com"
+}
+
+### Get User (replace USER_ID with actual id)
+GET http://localhost:3000/api/users/USER_ID
+
+### Get User Limits
+GET http://localhost:3000/api/users/USER_ID/limits
+
+### Generate Lesson
+POST http://localhost:3000/api/lessons/generate
+Content-Type: application/json
+
+{
+  "userId": "USER_ID"
+}
+
+### Generate Lesson with Topic Filter
+POST http://localhost:3000/api/lessons/generate
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "topic": "Prompt Engineering"
+}
+
+### Check Answer (multiple choice)
+POST http://localhost:3000/api/lessons/check-answer
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "lessonId": "lesson_001",
+  "questionId": "q1",
+  "userAnswer": 1
+}
+
+### Check Answer (true/false)
+POST http://localhost:3000/api/lessons/check-answer
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "lessonId": "lesson_001",
+  "questionId": "q2",
+  "userAnswer": true
+}
+
+### Check Answer (fill_blank)
+POST http://localhost:3000/api/lessons/check-answer
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "lessonId": "lesson_001",
+  "questionId": "q4",
+  "userAnswer": "role"
+}
+
+### Save Progress
+POST http://localhost:3000/api/progress/save
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "lessonId": "lesson_001",
+  "correctCount": 4,
+  "totalCount": 5
+}
+
+### Save Perfect Progress
+POST http://localhost:3000/api/progress/save
+Content-Type: application/json
+
+{
+  "userId": "USER_ID",
+  "lessonId": "lesson_002",
+  "correctCount": 5,
+  "totalCount": 5
+}
+
+### Get Progress
+GET http://localhost:3000/api/progress/USER_ID

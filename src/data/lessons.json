@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "lesson_001",
+    "title": "Why prompts matter more than you think",
+    "topic": "Foundations",
+    "difficulty": 1,
+    "description": "The same question asked two different ways gets completely different results. This lesson is your aha-moment.",
+    "airaIntro": "Let's start with something that might surprise you. The way you ask an AI a question changes everything about the answer you get. Not a little — completely.",
+    "airaOutro": "You just learned the single most important thing about working with AI. Specificity is not a nice-to-have — it's the whole game. Carry that with you.",
+    "realWorldScenario": "Lina is planning a trip to Japan. She asks ChatGPT: 'Tell me about Japan.' She gets a Wikipedia-style wall of text. Then she asks: 'I'm visiting Tokyo for 5 days in April with my partner. We love street food and hidden spots. Suggest a day-by-day itinerary.' Now we're talking.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Lina wants travel advice. Which prompt will get the most useful response?",
+        "options": [
+          "Tell me about Japan",
+          "I'm visiting Tokyo for 5 days in April with my partner. We love street food and hidden spots. Suggest a day-by-day itinerary.",
+          "Japan travel tips please",
+          "What should I do in Tokyo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The second prompt gives the AI five pieces of context: destination, duration, timing, who's going, and what they enjoy. More context means the AI can tailor its answer instead of guessing what you need.",
+        "airaFeedback": {
+          "correct": "Exactly. You gave the AI enough to work with — that's the whole secret.",
+          "incorrect": "Look at which prompt gives the AI the most to work with. Duration, timing, preferences — the more context, the better the answer."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "A one-word prompt like 'Marketing' can produce results just as useful as a detailed prompt — if the AI is smart enough.",
+        "correctAnswer": false,
+        "explanation": "Even the most advanced AI needs context. 'Marketing' could mean a hundred things. Marketing for what? For whom? What format? The AI doesn't read your mind — it fills the gaps with guesses.",
+        "airaFeedback": {
+          "correct": "Right. No matter how smart the AI gets, it still can't read your mind. Context is your job.",
+          "incorrect": "Think about it this way — if a friend texted you just the word 'Marketing,' would you know what they needed? The AI faces the same problem."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's the single biggest difference between a weak prompt and a strong one?",
+        "options": [
+          "Strong prompts use bigger words",
+          "Strong prompts are longer",
+          "Strong prompts are specific about what you actually want",
+          "Strong prompts use special formatting"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Length doesn't matter. Fancy words don't matter. Specificity does. A 20-word prompt that's clear will outperform a 200-word prompt that's vague every single time.",
+        "airaFeedback": {
+          "correct": "That's it. Specificity over everything. You're already thinking like a power user.",
+          "incorrect": "It's not about length or vocabulary. It's about being clear on what you actually want the AI to do."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The key principle of good prompting is: be _____ about what you want.",
+        "correctAnswer": "specific",
+        "explanation": "Specificity is the foundation. Every advanced prompting technique — roles, chain of thought, examples — is really just a different way of being more specific.",
+        "airaFeedback": {
+          "correct": "Simple word, massive impact. Specificity is the foundation of everything we'll learn together.",
+          "incorrect": "The word we're looking for is 'specific.' It sounds simple, but it changes everything."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Rewrite this vague prompt to be more useful: 'Help me with my resume.' Include at least: your job target, experience level, and what kind of help you need.",
+        "correctAnswer": ["resume", "experience", "help"],
+        "explanation": "A strong rewrite might look like: 'I have 3 years of experience in graphic design and I'm applying for a senior designer role at a tech startup. Can you review my resume bullet points and make them more impactful?' The AI now knows your level, your target, and what you need.",
+        "airaFeedback": {
+          "correct": "Nice. You gave the AI something real to work with. That's the difference between a generic answer and a useful one.",
+          "incorrect": "Try including who you are, what role you're targeting, and what kind of help you need. The AI does its best work when it understands the situation."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_002",
+    "title": "Talking to AI like a smart friend, not Google",
+    "topic": "Foundations",
+    "difficulty": 1,
+    "description": "The biggest beginner mistake: typing keywords instead of having a real conversation. Let's fix that.",
+    "airaIntro": "Here's something most people never realize — you can talk to AI like a person. Full sentences. Context. Follow-ups. The keyword era is over.",
+    "airaOutro": "You've just unlearned the Google reflex. From now on, talk to AI the way you'd explain something to a smart friend who wants to help.",
+    "realWorldScenario": "Marcus is a college student working on an essay about climate change. He opens ChatGPT and types: 'climate change essay arguments.' He gets a generic list. What if he'd said: 'I'm writing a 1500-word essay arguing that local action on climate change matters more than global policy. Can you help me outline three strong arguments with examples?'",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Marcus needs help with his essay. Which approach will get better results?",
+        "options": [
+          "climate change essay arguments",
+          "I'm writing a 1500-word essay arguing that local climate action matters more than global policy. Help me outline 3 strong arguments with examples.",
+          "essay help climate",
+          "best arguments for climate change"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The conversational prompt tells the AI: the format (essay), the length (1500 words), the angle (local > global), and the ask (3 arguments with examples). Keywords alone force the AI to guess all of that.",
+        "airaFeedback": {
+          "correct": "See the difference? You're not searching — you're collaborating. That's the mindset shift.",
+          "incorrect": "The keyword approach is a Google habit. With AI, you can explain your whole situation in plain language — and you should."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "When talking to AI, you should use keywords and short phrases for best results, just like a search engine.",
+        "correctAnswer": false,
+        "explanation": "AI language models are designed to understand natural language — full sentences, context, nuance. Treating them like search engines strips away the context they need to help you well.",
+        "airaFeedback": {
+          "correct": "Exactly. The whole point of AI chat is that you don't need to speak in keywords anymore.",
+          "incorrect": "This is the #1 habit to break. AI isn't a search engine — it's a conversation partner. Talk to it like one."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "You got a response from AI but it's too technical. What's the best next step?",
+        "options": [
+          "Start a brand new chat and try again",
+          "Give up and Google it instead",
+          "Say: 'That's too technical. Can you explain it like I'm 15 and have no background in this?'",
+          "Copy the response and paste it into another AI"
+        ],
+        "correctAnswer": 2,
+        "explanation": "AI remembers the conversation. You can redirect it just like you would a person. 'Too technical — simplify it' is a perfectly valid follow-up that gets you exactly what you need.",
+        "airaFeedback": {
+          "correct": "That's it. The conversation doesn't end at the first answer — you can always redirect.",
+          "incorrect": "You don't have to start over. Just tell the AI what's wrong with its answer. It's a conversation, not a one-shot query."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Instead of typing keywords into AI, you should write in full _____ like you're talking to a person.",
+        "correctAnswer": "sentences",
+        "explanation": "Full sentences carry context, intent, and nuance that keywords simply can't. 'Python sort list' vs 'I have a list of student names in Python and I want to sort them alphabetically, ignoring case' — completely different results.",
+        "airaFeedback": {
+          "correct": "Simple shift, huge difference. Full sentences give AI the context it needs to actually help.",
+          "incorrect": "The answer is 'sentences.' When you write complete thoughts, the AI understands not just what you want, but why."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Turn this keyword search into a conversational AI prompt: 'best morning routine productive.' Write it as if you're explaining your situation to a smart friend.",
+        "correctAnswer": ["morning", "routine", "productive"],
+        "explanation": "A good conversational version: 'I'm a remote worker who struggles to focus before noon. Can you suggest a morning routine that would help me be productive by 9am? I have about 90 minutes before work starts and I'm not a morning person.' Real context, real results.",
+        "airaFeedback": {
+          "correct": "This is the shift. You're not searching — you're having a conversation. And the AI can work with that.",
+          "incorrect": "Try writing it as if you're explaining your situation to someone. Who are you? What's the problem? What do you need?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_003",
+    "title": "The art of being specific",
+    "topic": "Foundations",
+    "difficulty": 2,
+    "description": "Generic vs specific prompts, side by side. The pattern: who, what, length, tone, audience.",
+    "airaIntro": "We've talked about specificity. Now let's build a system for it. There's a simple mental checklist that turns any vague prompt into a great one.",
+    "airaOutro": "You now have a framework — who, what, length, tone, audience. You don't need it every time, but when a prompt isn't working, run through the checklist. It almost always fixes the problem.",
+    "realWorldScenario": "Priya runs a small bakery and wants Instagram captions for her new matcha croissant. She types: 'Write a caption.' She gets something generic. Then she tries: 'Write a playful 2-sentence Instagram caption for a matcha croissant, targeting foodies aged 20-35. Tone: trendy but not cringey.' Night and day.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Priya wants an Instagram caption. Which prompt covers who, what, tone, and audience?",
+        "options": [
+          "Write a caption for my bakery",
+          "Instagram caption matcha croissant",
+          "Write a playful 2-sentence Instagram caption for a matcha croissant, targeting foodies aged 20-35. Tone: trendy but not cringey.",
+          "Help me with social media marketing"
+        ],
+        "correctAnswer": 2,
+        "explanation": "That prompt covers: what (Instagram caption), subject (matcha croissant), length (2 sentences), tone (playful, trendy but not cringey), and audience (foodies 20-35). That's the checklist in action.",
+        "airaFeedback": {
+          "correct": "You spotted the complete one. Notice how each piece of context eliminates a way the AI could go wrong.",
+          "incorrect": "Look for the prompt that answers: what is it, who's it for, how long, and what tone? The more of those you cover, the better."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Specifying the tone (formal, casual, funny, etc.) in your prompt makes a significant difference in the AI's response.",
+        "correctAnswer": true,
+        "explanation": "Tone is one of the biggest levers you have. The same information delivered in a formal vs. casual tone feels completely different. Without guidance, the AI defaults to a safe, generic tone that often sounds robotic.",
+        "airaFeedback": {
+          "correct": "Tone is a superpower most people forget. Same info, completely different impact.",
+          "incorrect": "Try it yourself — ask the AI to explain something 'formally' and then 'like a friend texting you.' You'll see the massive difference."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which of these is NOT part of the specificity checklist for a good prompt?",
+        "options": [
+          "Who is the audience?",
+          "What format or length do you want?",
+          "How many emojis should the AI use?",
+          "What tone should it use?"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The core checklist is: who (audience), what (task + subject), length/format, and tone. Emoji count is a detail, not a core element. Focus on the big levers first.",
+        "airaFeedback": {
+          "correct": "Right — we focus on the big levers. Who, what, length, tone. The details can come in follow-ups.",
+          "incorrect": "Emojis are a surface detail. The real checklist is: who's the audience, what do you want, how long, and what tone."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The five elements of a specific prompt are: who, what, length, tone, and _____.",
+        "correctAnswer": "audience",
+        "explanation": "Audience is the element most people skip, but it changes everything. An explanation for a 10-year-old vs. a PhD student will look completely different — and the AI handles both well when you specify.",
+        "airaFeedback": {
+          "correct": "Audience is the one most people forget. And it's often the one that matters most.",
+          "incorrect": "The missing piece is 'audience.' Knowing who will read the output shapes how the AI writes it."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You need to write an email to your team announcing a new remote work policy. Write a prompt that includes all 5 elements: who (your role), what (the task), length, tone, and audience.",
+        "correctAnswer": ["email", "team", "remote"],
+        "explanation": "A complete prompt: 'I'm a team lead at a tech startup. Write a 3-paragraph email announcing our new hybrid remote work policy (3 days office, 2 days remote) to my team of 12 engineers. Tone: warm but clear. They should feel excited, not micromanaged.' Every element is covered.",
+        "airaFeedback": {
+          "correct": "Look at that — every element covered. This is how you consistently get responses you can actually use.",
+          "incorrect": "Make sure you're covering all five: who you are, what you need, how long, what tone, and who will read it."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_004",
+    "title": "The 3-question test",
+    "topic": "Critical Thinking",
+    "difficulty": 2,
+    "description": "Before trusting any AI answer, run it through three simple questions. This habit will save you from embarrassing mistakes.",
+    "airaIntro": "Here's where we get into something most AI apps won't teach you. AI is powerful — but it's not always right. Let's build your instinct for knowing when to trust and when to verify.",
+    "airaOutro": "You now have a filter that most people don't. Three questions: Is it verifiable? Could it be outdated? Does it match what I know? Use them, and you'll catch mistakes before they catch you.",
+    "realWorldScenario": "Noah asks AI: 'When was the Golden Gate Bridge completed?' The AI says 1937. That's correct and verifiable. Then Noah asks: 'What's the latest iPhone model?' The AI confidently answers — but its training data is months old. The answer might already be wrong. Same AI, same confidence, different reliability.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "You ask AI for the population of Tokyo. Before trusting the answer, what's the FIRST question to ask yourself?",
+        "options": [
+          "Did the AI sound confident?",
+          "Is this answer verifiable with a quick search?",
+          "Was the response long and detailed?",
+          "Did the AI cite sources?"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Confidence in AI means nothing — it sounds equally confident whether it's right or wrong. The first check is: can I verify this? Population data is easily verifiable, so a quick check confirms or corrects it.",
+        "airaFeedback": {
+          "correct": "That's the first instinct to build. Can I check this? If yes, check it when it matters.",
+          "incorrect": "AI confidence is not the same as accuracy. It sounds sure even when it's wrong. The first question is always: can I verify this?"
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "If an AI gives you a confident, detailed answer, you can generally trust it without verifying.",
+        "correctAnswer": false,
+        "explanation": "This is the trap. AI is designed to sound confident. It doesn't say 'I'm not sure' nearly enough. A detailed, confident answer about a made-up book citation is still wrong. Confidence is not evidence.",
+        "airaFeedback": {
+          "correct": "Good. This is the most important lesson in the whole app, honestly. Confidence is not evidence.",
+          "incorrect": "This is the trap most people fall into. AI is designed to sound confident — even when it's completely making things up."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "The 3-question test is: (1) Is it verifiable? (2) Could it be outdated? (3) ...",
+        "options": [
+          "Did the AI use formal language?",
+          "Does it match what I already know to be true?",
+          "Was the response fast?",
+          "Did I use a good prompt?"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The third question taps your existing knowledge. If AI tells you something that contradicts what you know, that's a red flag worth investigating. Your knowledge is a valuable cross-check.",
+        "airaFeedback": {
+          "correct": "Your own knowledge is a filter. If something feels off, trust that instinct and verify.",
+          "incorrect": "The third question is about you. Does the answer match what you already know? Your own knowledge is part of the verification process."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "AI models have a training data cutoff, which means answers about _____ events might be wrong.",
+        "correctAnswer": "recent",
+        "explanation": "AI models are trained on data up to a certain date. Anything that happened after that date — new laws, new products, recent events — the AI might not know about, or worse, might confidently guess wrong about.",
+        "airaFeedback": {
+          "correct": "Exactly. The cutoff is invisible but real. For anything recent, always double-check.",
+          "incorrect": "The word is 'recent.' AI doesn't know what happened after its training cutoff — and it won't always tell you that."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "multiple_choice",
+        "question": "You ask AI to recommend a restaurant in your city that opened last month. Which question from the 3-question test is most relevant?",
+        "options": [
+          "Is it verifiable?",
+          "Could it be outdated?",
+          "Does it match what I know?",
+          "All three, but especially 'Could it be outdated?'"
+        ],
+        "correctAnswer": 3,
+        "explanation": "All three matter, but 'Could it be outdated?' is the most critical here. A restaurant that opened last month likely isn't in the AI's training data. The AI might invent a plausible-sounding restaurant that doesn't exist.",
+        "airaFeedback": {
+          "correct": "All three apply, but the freshness question is the one that saves you here. A last-month opening? The AI is probably guessing.",
+          "incorrect": "When something is very recent, the 'Could it be outdated?' question becomes the most important. The AI's training data has a cutoff date."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_005",
+    "title": "When AI is confidently wrong",
+    "topic": "Critical Thinking",
+    "difficulty": 3,
+    "description": "Hallucinations explained without the jargon. Why AI sometimes invents things and sounds absolutely sure about it.",
+    "airaIntro": "Quick honest moment — this is the kind of thing AI gets wrong a lot, and almost nobody talks about it clearly. Let's change that.",
+    "airaOutro": "Now you know the word for it — hallucination — and more importantly, you know the pattern. When AI fills gaps with plausible-sounding fiction, you'll catch it. Most people won't.",
+    "realWorldScenario": "Sara is writing a research paper and asks AI: 'Give me three academic sources about social media's impact on teen mental health.' The AI provides three citations — author names, journal titles, years. They look perfect. Sara searches for them: two don't exist. The AI invented them. This is called a hallucination, and it's more common than you'd think.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Sara got three citations from AI. Two were completely fabricated. Why did this happen?",
+        "options": [
+          "The AI was broken that day",
+          "AI generates text that sounds plausible, even when the specific facts don't exist",
+          "Sara used a bad prompt",
+          "The AI was trying to deceive her"
+        ],
+        "correctAnswer": 1,
+        "explanation": "AI doesn't retrieve information from a database. It predicts what text should come next based on patterns. When it doesn't know a real citation, it generates one that looks and sounds like a real citation. It's not lying — it's pattern-matching without a fact-checker.",
+        "airaFeedback": {
+          "correct": "That's the key insight. AI is a pattern machine, not a fact database. It generates what sounds right, not what is right.",
+          "incorrect": "It's not deception or a bug. AI predicts the next likely words based on patterns — and sometimes those patterns produce things that look real but aren't."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "AI hallucinations are easy to spot because the AI will warn you when it's making something up.",
+        "correctAnswer": false,
+        "explanation": "This is what makes hallucinations dangerous. The AI presents fabricated information with the exact same confidence as verified facts. There's no warning label. The only defense is your own critical thinking.",
+        "airaFeedback": {
+          "correct": "Right. There's no warning. That's exactly why this skill matters — you are the fact-checker.",
+          "incorrect": "That's the problem — AI doesn't know when it's wrong. It presents a made-up fact with the same confidence as a real one. You have to be the filter."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which type of request is MOST likely to produce a hallucination?",
+        "options": [
+          "Asking for a general explanation of a well-known concept",
+          "Asking for specific citations, names, or URLs",
+          "Asking for a creative story",
+          "Asking to translate text"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Specific factual claims — exact names, book titles, URLs, statistics, dates — are the highest hallucination risk. The AI knows the pattern of what a citation looks like, so it generates one. General explanations and creative tasks are much safer.",
+        "airaFeedback": {
+          "correct": "You've got the pattern. Specific factual claims are the danger zone. General explanations are much safer.",
+          "incorrect": "Specific facts — names, URLs, citations, dates — are where AI is most likely to hallucinate. It knows the format, so it fills in the blanks."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "When AI generates information that sounds plausible but is factually false, this is called a _____.",
+        "correctAnswer": "hallucination",
+        "explanation": "Hallucination is the technical term, but think of it as 'confident fabrication.' The AI isn't lying on purpose — it's generating text that fits the pattern without checking if it's true.",
+        "airaFeedback": {
+          "correct": "Now you have the word. More importantly, you know what to watch for.",
+          "incorrect": "The term is 'hallucination.' Think of it as the AI dreaming up facts that sound right but aren't."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "multiple_choice",
+        "question": "What's the best strategy when you need AI to help with factual research?",
+        "options": [
+          "Ask the AI to only give true information",
+          "Use AI for the structure and ideas, then verify specific facts yourself",
+          "Ask the AI twice to make sure it gives the same answer",
+          "Use longer prompts so the AI tries harder"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The power move: use AI for brainstorming, outlining, and structuring — things it's great at. Then verify the specific facts, names, and claims yourself. This gives you the speed of AI with the accuracy of human verification.",
+        "airaFeedback": {
+          "correct": "That's the smart workflow. AI for structure and ideas, you for fact-checking. Best of both worlds.",
+          "incorrect": "Asking AI to 'be accurate' doesn't work — it already thinks it is. The winning strategy is: AI for ideas, you for verification."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_006",
+    "title": "When NOT to use AI",
+    "topic": "Critical Thinking",
+    "difficulty": 3,
+    "description": "The most important AI lesson nobody teaches: knowing when the right tool is a human, not a machine.",
+    "airaIntro": "This might be the most important lesson in this whole app. Every tool has limits. Knowing when NOT to use AI is what separates someone who's smart about technology from someone who's just dependent on it.",
+    "airaOutro": "You now know something that most AI companies won't tell you: their product isn't always the answer. That awareness makes you more capable, not less. Think of it as having a bigger toolkit — and knowing which tool to reach for.",
+    "realWorldScenario": "Kai is 17 and stressed about college applications. He asks AI to write his personal essay. The AI produces something polished, but it sounds like... everyone else's essay. His counselor reads it and says: 'This doesn't sound like you.' Kai realizes the essay that gets him in has to come from him — AI can help him brainstorm, but not replace his voice.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Kai wants to use AI for his college essay. What's the smartest approach?",
+        "options": [
+          "Let AI write the whole essay, then just edit it",
+          "Don't use AI at all — it's cheating",
+          "Use AI to brainstorm ideas and overcome writer's block, but write the essay yourself",
+          "Submit what the AI wrote — nobody will know"
+        ],
+        "correctAnswer": 2,
+        "explanation": "AI is a great brainstorming partner. 'Help me think of meaningful experiences from my life' or 'I'm stuck on my intro — here's what I want to say' is powerful. But the essay needs your voice, your stories, your perspective. That's what admissions officers are looking for.",
+        "airaFeedback": {
+          "correct": "That's the balance. AI as a thinking partner, not a ghostwriter. Your voice is what makes it yours.",
+          "incorrect": "There's a middle path. AI can help you think and brainstorm, but the actual writing — your voice, your stories — needs to come from you."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "AI is a good replacement for talking to a real therapist or counselor when you're going through a hard time.",
+        "correctAnswer": false,
+        "explanation": "AI can listen, and that might feel comforting. But it doesn't know you. It can't read your face, can't call for help, can't hold real accountability. For mental health support, real humans — therapists, counselors, trusted friends — are irreplaceable.",
+        "airaFeedback": {
+          "correct": "This one matters. AI can be a starting point for understanding your feelings, but real support comes from real people.",
+          "incorrect": "AI can feel like it understands, but it doesn't know you. For real emotional support, real humans are irreplaceable."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which of these is AI LEAST suitable for?",
+        "options": [
+          "Summarizing a long article",
+          "Making a medical decision about whether to take a specific medication",
+          "Brainstorming names for a project",
+          "Explaining a complex concept in simple terms"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Medical decisions require real expertise, knowledge of your health history, and accountability. AI has none of these. It might give you useful background information, but the decision must involve qualified professionals who know your situation.",
+        "airaFeedback": {
+          "correct": "Exactly. Medical decisions need real expertise, real context about your health, and real accountability. AI has none of those.",
+          "incorrect": "Summaries, brainstorming, explanations — AI handles those well. But medical decisions require a professional who knows your health history."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "AI can help you research and brainstorm, but it should never replace your own _____ on important decisions.",
+        "correctAnswer": "judgment",
+        "explanation": "Your judgment — informed by your values, your context, your understanding of the situation — is something AI can't replicate. Use AI to inform your thinking, not to do your thinking for you.",
+        "airaFeedback": {
+          "correct": "That's the core of it. AI informs your thinking. It doesn't replace it.",
+          "incorrect": "The word is 'judgment.' AI can give you information and perspectives, but the final call on important decisions is yours."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "multiple_choice",
+        "question": "A friend asks AI: 'Should I break up with my partner?' What's the problem with relying on AI's answer?",
+        "options": [
+          "AI will always say yes",
+          "AI doesn't know your relationship, your feelings, or the full context — it can only guess",
+          "AI isn't programmed to discuss relationships",
+          "There's no problem — AI gives objective advice"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Relationship decisions involve emotions, history, context, and values that AI simply doesn't have access to. It might offer generic advice, but it can't know what your relationship actually feels like from the inside. A trusted friend who knows you will give better advice.",
+        "airaFeedback": {
+          "correct": "Right. AI doesn't know what your relationship feels like. For this kind of question, talk to someone who knows you.",
+          "incorrect": "AI doesn't know you or your partner. It can't feel what you feel. For deeply personal decisions, talk to people who actually know your life."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_007",
+    "title": "Asking AI to think out loud",
+    "topic": "Practical",
+    "difficulty": 2,
+    "description": "Chain of thought made simple. One sentence addition to your prompts that changes everything.",
+    "airaIntro": "Here's a technique that takes ten seconds to learn and makes AI dramatically better at complex problems. Ready?",
+    "airaOutro": "You now have one of the most powerful techniques in prompting. 'Explain your reasoning step by step.' Six words that make AI significantly smarter on hard problems.",
+    "realWorldScenario": "Dena is a freelancer trying to figure out her quarterly taxes. She asks AI: 'How much do I owe in taxes on $15,000 freelance income?' The AI gives a number. Then she adds: 'Walk me through the calculation step by step.' Now she gets the reasoning, catches an error in the deduction, and learns how taxes actually work.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Dena wants AI to help with her taxes. Which prompt will give her the most trustworthy answer?",
+        "options": [
+          "How much tax do I owe on $15,000?",
+          "Calculate my taxes",
+          "I earned $15,000 as a freelancer this quarter. Walk me through how to estimate my tax liability step by step, including self-employment tax.",
+          "What's 30% of $15,000?"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When you ask AI to show its work, two things happen: the AI actually reasons more carefully, and you can spot errors in the logic. It's like asking a student to show their work on a math test — the process matters as much as the answer.",
+        "airaFeedback": {
+          "correct": "When you can see the reasoning, you can spot the errors. That's the power of thinking out loud.",
+          "incorrect": "The step-by-step prompt forces the AI to show its work. This makes the answer more accurate AND lets you verify each step."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Asking AI to 'explain step by step' actually makes it produce more accurate answers on complex problems.",
+        "correctAnswer": true,
+        "explanation": "This is well-documented in AI research. When language models are prompted to reason step by step, they perform significantly better on math, logic, and multi-step problems. It's not just about showing work — the AI literally thinks better when you ask it to.",
+        "airaFeedback": {
+          "correct": "It's counterintuitive, but yes — asking AI to reason step by step genuinely makes it more accurate. The process improves the result.",
+          "incorrect": "It does. Research shows that step-by-step prompting significantly improves accuracy on complex problems. The AI literally reasons better when asked to."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "When is 'think step by step' MOST useful?",
+        "options": [
+          "When asking for a creative poem",
+          "When asking a simple factual question like 'What's the capital of France?'",
+          "When the problem involves multiple steps, logic, or calculation",
+          "When you want a shorter answer"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chain of thought shines on complex, multi-step problems. For simple facts or creative tasks, it's unnecessary overhead. But for math, logic, analysis, or any problem where reasoning matters — it's a game-changer.",
+        "airaFeedback": {
+          "correct": "Exactly. Save this technique for when reasoning matters — multi-step problems, analysis, and calculations.",
+          "incorrect": "This technique is most powerful for complex reasoning. Simple facts don't need step-by-step thinking, but calculations and analysis do."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The prompting technique of asking AI to show its reasoning process is called _____ of thought prompting.",
+        "correctAnswer": "chain",
+        "explanation": "Chain of thought prompting links reasoning steps together like a chain. Each step builds on the previous one, creating a traceable path from question to answer.",
+        "airaFeedback": {
+          "correct": "Chain of thought. Each step links to the next. And you can follow — or challenge — every link.",
+          "incorrect": "It's 'chain' — chain of thought. The idea is that reasoning steps are linked together, each building on the last."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You want AI to help you decide whether to lease or buy a car. Write a prompt that uses chain of thought to get a well-reasoned comparison.",
+        "correctAnswer": ["step", "lease", "buy"],
+        "explanation": "A strong prompt: 'I'm deciding between leasing and buying a car. My budget is $400/month, I drive about 12,000 miles/year, and I like to switch cars every 3-4 years. Walk me through the financial comparison step by step, including total cost over 4 years for each option.' The AI now has context and a mandate to reason through it.",
+        "airaFeedback": {
+          "correct": "Great prompt. You gave context and asked for step-by-step reasoning. Now you'll get an answer you can actually trust and follow.",
+          "incorrect": "Include your specific situation (budget, mileage, timeline) and explicitly ask the AI to walk through the comparison step by step."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_008",
+    "title": "Giving AI a role",
+    "topic": "Practical",
+    "difficulty": 3,
+    "description": "Role prompting — 'You are a...' — when it works, when it's theater, and how to use it well.",
+    "airaIntro": "You've probably seen the advice: 'Tell the AI to pretend to be an expert.' It works — sometimes. Let's figure out when it's powerful and when it's just performance.",
+    "airaOutro": "Role prompting is a tool, not magic. It works when the role shapes the perspective you need. Use it to unlock a specific viewpoint — not as a magic word that makes AI smarter.",
+    "realWorldScenario": "Tom is writing a business plan and tries: 'You are a Harvard Business School professor. Review my business plan.' The AI gives structured, analytical feedback — different from what he'd get without the role. But when he tries 'You are a doctor. Diagnose my symptoms' — the role doesn't make the medical advice safe or reliable.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Which role prompt is most likely to genuinely improve the AI's output?",
+        "options": [
+          "You are the smartest AI in the world",
+          "You are a senior copywriter at a top ad agency. Write a tagline for a sustainable fashion brand targeting Gen Z.",
+          "You are a genius. Help me.",
+          "You are perfect and never make mistakes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The copywriter role gives the AI a specific perspective: ad agency thinking, tagline format, brand understanding. 'You are a genius' does nothing because it doesn't change the perspective or approach. Good roles are specific and relevant to the task.",
+        "airaFeedback": {
+          "correct": "Notice how the good role is specific and relevant. It changes the AI's perspective, not just its ego.",
+          "incorrect": "Vague praise doesn't change how AI thinks. A good role gives a specific perspective relevant to the task."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Telling AI 'You are a doctor' makes its medical advice safe and reliable.",
+        "correctAnswer": false,
+        "explanation": "The role doesn't give the AI medical training or knowledge of your health history. It might structure the response more like a doctor would talk, but the underlying information can still be wrong, incomplete, or dangerous to act on without real medical oversight.",
+        "airaFeedback": {
+          "correct": "Important distinction. The role changes the format and perspective, not the underlying reliability. For medical questions, see a real doctor.",
+          "incorrect": "A role changes how the AI structures its response, not whether the information is safe to act on. Medical decisions always need a real professional."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What makes role prompting actually work?",
+        "options": [
+          "It makes the AI smarter overall",
+          "It narrows the AI's perspective to a specific expertise and communication style",
+          "It unlocks hidden capabilities in the AI",
+          "It forces the AI to be more accurate"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Role prompting works by narrowing. Instead of drawing from everything it knows, the AI focuses through the lens of that role. A 'senior financial analyst' will structure output differently than a 'friendly teacher' — even with the same information.",
+        "airaFeedback": {
+          "correct": "It's about focus, not magic. The role narrows the lens, and that changes the output in useful ways.",
+          "incorrect": "Roles don't make AI smarter — they focus it. Like asking a versatile friend to put on their 'accountant hat' before looking at your budget."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The technique of starting a prompt with 'You are a...' to set the AI's perspective is called _____ prompting.",
+        "correctAnswer": "role",
+        "explanation": "Role prompting sets the stage for how the AI should approach your request. Think of it as casting the AI in a part — the role determines the perspective, vocabulary, and priorities it brings to the task.",
+        "airaFeedback": {
+          "correct": "Role prompting. Simple technique, but knowing when to use it well is what matters.",
+          "incorrect": "It's 'role' prompting — you're giving the AI a role to play. And like any tool, it works best when the role is relevant to the task."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You want feedback on a short story you wrote. Create a role prompt that would get you useful, specific literary feedback (not just 'great job!').",
+        "correctAnswer": ["editor", "feedback", "story"],
+        "explanation": "A strong role prompt: 'You are an experienced fiction editor who has worked with emerging writers. Read my short story and give me honest, specific feedback on: pacing, character development, and dialogue. Be direct — I want to improve, not just hear compliments.' The role + specific ask = useful feedback.",
+        "airaFeedback": {
+          "correct": "See how the role plus specific criteria gets you real feedback? That's how you make role prompting actually useful.",
+          "incorrect": "Try combining a specific role (like a fiction editor) with specific criteria you want feedback on. 'You are X, give me feedback on Y and Z.'"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_009",
+    "title": "The follow-up is where the magic is",
+    "topic": "Practical",
+    "difficulty": 3,
+    "description": "Most people stop at the first answer. The real value is in messages 3 through 5.",
+    "airaIntro": "Here's something that separates casual users from people who actually get value from AI. Most people ask one question, get one answer, and leave. The real magic starts when you push back, dig deeper, and refine.",
+    "airaOutro": "From now on, don't stop at the first answer. The first response is a draft. The real value comes when you push, refine, and dig deeper. That's where AI becomes genuinely useful.",
+    "realWorldScenario": "Ava asks AI to write a product description for her candle brand. The first response is decent but generic. Instead of accepting it, she says: 'Too formal. Make it warmer and more conversational.' Better. Then: 'Now make it shorter — just 2 sentences.' Perfect. The first answer was a starting point, not the finish line.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Ava got a generic product description. What should she do?",
+        "options": [
+          "Accept it — AI knows best",
+          "Start a new chat and try a better prompt",
+          "Follow up: 'Too formal. Make it warmer and more conversational.'",
+          "Ask a different AI"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The AI remembers your conversation. A follow-up like 'too formal, make it warmer' is faster and more effective than starting over. Think of the first response as a first draft you can immediately edit through conversation.",
+        "airaFeedback": {
+          "correct": "Exactly. The first response is a draft. Your follow-up shapes it into what you actually need.",
+          "incorrect": "Don't start over — build on what's there. A simple 'make it warmer' or 'shorter' gets you closer much faster."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "The best AI users typically get their best result on the first try.",
+        "correctAnswer": false,
+        "explanation": "Power users expect the first answer to be a rough draft. They iterate: 'Make this shorter.' 'Add an example.' 'Now rewrite it for a different audience.' Three to five exchanges is where the real quality emerges.",
+        "airaFeedback": {
+          "correct": "Power users treat the first answer as a starting point. The good stuff comes from iteration.",
+          "incorrect": "Nobody gets the best result on try one. The pros expect to iterate. It's messages 3 through 5 where the magic happens."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which follow-up technique is most effective?",
+        "options": [
+          "That was bad. Try again.",
+          "The tone is right but it's too long. Cut it to 3 sentences and add a concrete example.",
+          "Do better.",
+          "I don't like it. Write something else."
+        ],
+        "correctAnswer": 1,
+        "explanation": "Specific feedback works. Tell the AI what's working, what isn't, and what to change. 'The tone is right but it's too long' gives the AI something to work with. 'Do better' gives it nothing.",
+        "airaFeedback": {
+          "correct": "Specific feedback is the key. Tell the AI what's working, what's not, and exactly what to change.",
+          "incorrect": "The best follow-ups are specific. Name what works, what doesn't, and what you want different. Vague 'try again' gives the AI nothing to work with."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The process of refining AI output through multiple back-and-forth messages is called _____.",
+        "correctAnswer": "iteration",
+        "explanation": "Iteration is the key to getting great results from AI. Each round of feedback narrows the gap between what you got and what you wanted. It's a conversation, not a slot machine.",
+        "airaFeedback": {
+          "correct": "Iteration. That's the word and the mindset. Every follow-up gets you closer.",
+          "incorrect": "The word is 'iteration.' Each round of feedback refines the output. It's a collaborative process, not a one-shot deal."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You got a response from AI that's too long and too formal. Write a follow-up message that keeps what's good and fixes what isn't.",
+        "correctAnswer": ["shorter", "casual"],
+        "explanation": "A great follow-up: 'The content is solid but the tone is too stiff and it's twice as long as I need. Rewrite this in a casual, conversational tone and keep it under 100 words.' Specific, directional, and builds on what's already there.",
+        "airaFeedback": {
+          "correct": "That's how you steer AI. Be specific about what to keep and what to change. The AI does its best work when you direct it.",
+          "incorrect": "Name both problems — length and tone — and tell the AI what you want instead. 'Make it shorter and more casual' with specific targets works best."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_010",
+    "title": "ChatGPT vs Claude vs Gemini — the honest take",
+    "topic": "Tools",
+    "difficulty": 2,
+    "description": "A quick, honest comparison. No hype. When to reach for which tool and why.",
+    "airaIntro": "People love arguing about which AI is best. The honest answer? They're all good at different things. Let's figure out which one to reach for in which situation.",
+    "airaOutro": "Now you know something most people don't — the best AI is the right AI for the job. Not the one with the best marketing. Keep experimenting, and you'll develop your own instincts.",
+    "realWorldScenario": "Diego needs to write a sensitive HR email, analyze a 50-page PDF, and get up-to-date info on a breaking news story. He used to open ChatGPT for everything. Now he knows: Claude handles the nuanced email well, Gemini processes the long PDF, and Perplexity covers the news with sources. Right tool, right job.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Diego needs to draft a sensitive HR email about a layoff. Which AI strength matters most here?",
+        "options": [
+          "Speed of response",
+          "Nuance, careful tone, and handling sensitive topics well",
+          "Code generation capability",
+          "Internet access"
+        ],
+        "correctAnswer": 1,
+        "explanation": "For sensitive communication, you need an AI that handles nuance and tone well. Claude is often praised for thoughtful, careful writing. But the key insight is: match the AI's strength to your need, not the other way around.",
+        "airaFeedback": {
+          "correct": "When the stakes are about tone and sensitivity, reach for the tool that handles nuance best. That changes the outcome.",
+          "incorrect": "For sensitive writing, nuance and tone are everything. The AI that handles these well gives you a better starting draft."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "There is one AI that is objectively the best at everything.",
+        "correctAnswer": false,
+        "explanation": "Each major AI has strengths and weaknesses. ChatGPT is versatile and has a massive plugin ecosystem. Claude is strong in nuanced writing and careful reasoning. Gemini handles long documents and integrates with Google. The 'best' depends entirely on what you need.",
+        "airaFeedback": {
+          "correct": "Exactly. There is no 'best.' There's 'best for this specific task.' That's the mature take.",
+          "incorrect": "No single AI wins at everything. Knowing their individual strengths and matching them to your task — that's the real skill."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "You need to analyze a 100-page research document. Which capability matters most?",
+        "options": [
+          "The AI's personality and chat style",
+          "Large context window — ability to process long documents",
+          "Image generation",
+          "Speed of initial response"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Context window is how much text an AI can 'see' at once. For long documents, you need an AI with a large context window, or it will miss information from parts it can't see. Gemini and Claude tend to offer larger windows.",
+        "airaFeedback": {
+          "correct": "Context window is the key spec for document work. If the AI can't see the whole document, it can't analyze the whole document.",
+          "incorrect": "For long documents, context window size is what matters. The AI needs to 'see' the whole document to analyze it properly."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The amount of text an AI can process at once is called its _____ window.",
+        "correctAnswer": "context",
+        "explanation": "Context window is measured in tokens (roughly 3/4 of a word). A larger context window means the AI can handle longer conversations, bigger documents, and more complex tasks without losing track.",
+        "airaFeedback": {
+          "correct": "Context window. One of the most practical specs to understand when choosing between AI tools.",
+          "incorrect": "It's called the 'context' window. Think of it as how much the AI can see and remember at one time."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "multiple_choice",
+        "question": "What's the smartest approach to choosing an AI tool?",
+        "options": [
+          "Pick the most popular one and use it for everything",
+          "Use the free version of whichever has the best UI",
+          "Try multiple tools, learn their strengths, and match them to specific tasks",
+          "Always use the newest model released"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The power user approach: develop familiarity with 2-3 major tools and learn when each one shines. ChatGPT for versatility, Claude for careful writing, Gemini for Google-integrated tasks, Perplexity for research. Your toolkit should be diverse.",
+        "airaFeedback": {
+          "correct": "That's the pro move. Knowing multiple tools and when to reach for each one gives you a real edge.",
+          "incorrect": "Don't marry one tool. Try several, learn their strengths, and reach for the right one based on the task."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_011",
+    "title": "Perplexity: when you actually need the truth",
+    "topic": "Tools",
+    "difficulty": 2,
+    "description": "Why Perplexity is different from ChatGPT, and when to use it instead.",
+    "airaIntro": "We talked about AI hallucinations — making things up. What if there was an AI built specifically to avoid that problem? There is. Let's talk about it.",
+    "airaOutro": "Now you know: when the facts need to be right, Perplexity is your go-to. When you need creativity, brainstorming, or writing — ChatGPT and Claude. Different tools, different strengths.",
+    "realWorldScenario": "Emma is a journalist writing about a new climate policy. She needs accurate, sourced information — not AI-generated summaries that might be wrong. She uses Perplexity instead of ChatGPT. Every claim comes with a linked source she can verify. She still fact-checks, but the starting point is significantly more reliable.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What makes Perplexity fundamentally different from ChatGPT?",
+        "options": [
+          "It's faster",
+          "It searches the internet in real-time and provides sources for its claims",
+          "It has a better personality",
+          "It never makes mistakes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Perplexity is built around real-time search. It finds current information, synthesizes it, and shows you where each claim comes from. ChatGPT and Claude are primarily conversational — they generate text from training data, not live search.",
+        "airaFeedback": {
+          "correct": "That's the key difference. Perplexity shows its sources. When you need facts, that transparency matters.",
+          "incorrect": "The core difference is sources. Perplexity searches the web and links where its information comes from. ChatGPT generates from training data."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Even Perplexity, which provides sources, should still be fact-checked on important claims.",
+        "correctAnswer": true,
+        "explanation": "Perplexity is better at sourcing, but it still interprets and summarizes — sometimes inaccurately. The sources themselves might be biased or outdated. Having sources is better than not having them, but verification is still your job for anything important.",
+        "airaFeedback": {
+          "correct": "Sources make verification easier, but they don't eliminate the need for it. Smart users always verify what matters.",
+          "incorrect": "Sources help, but they're not a guarantee. The source might be biased, outdated, or Perplexity might misinterpret it. Verify what matters."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "When would you choose Perplexity OVER ChatGPT?",
+        "options": [
+          "Writing a creative short story",
+          "Brainstorming names for your startup",
+          "Researching current information where accuracy and sources matter",
+          "Having a fun conversation"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Perplexity's strength is factual research with sources. For creative writing, brainstorming, or conversation, ChatGPT and Claude are better fits. Use the tool that matches the task.",
+        "airaFeedback": {
+          "correct": "Research with sources — that's Perplexity's home turf. Creative work goes to the conversational AIs.",
+          "incorrect": "For factual research where sources matter, Perplexity is the right tool. For creative or conversational tasks, stick with ChatGPT or Claude."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Perplexity's key advantage is providing _____ for its claims, so you can verify the information.",
+        "correctAnswer": "sources",
+        "explanation": "Sources are the transparency layer. When an AI shows you where its information comes from, you can evaluate the reliability yourself instead of trusting blindly.",
+        "airaFeedback": {
+          "correct": "Sources. Transparency changes everything. You can trace the claim back to where it came from.",
+          "incorrect": "The word is 'sources.' Being able to see where information comes from lets you evaluate it, not just accept it."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "true_false",
+        "question": "Perplexity is always better than ChatGPT because it has internet access.",
+        "correctAnswer": false,
+        "explanation": "Internet access is great for research, but ChatGPT and Claude are often better at creative writing, nuanced analysis, code generation, and extended conversations. 'Better' depends entirely on what you're trying to do. More information isn't always what you need.",
+        "airaFeedback": {
+          "correct": "Right. More information isn't always what you need. Sometimes you need creativity, nuance, or a good conversation partner.",
+          "incorrect": "Internet access is one advantage, but it doesn't make Perplexity better at everything. ChatGPT and Claude excel at tasks where live data isn't the point."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_012",
+    "title": "Notion AI, Cursor, and the new generation of tools",
+    "topic": "Tools",
+    "difficulty": 3,
+    "description": "AI baked into the tools you already use. The shift from 'go to a chatbot' to 'AI lives where you work.'",
+    "airaIntro": "Something big is happening that most people haven't noticed yet. AI is moving out of the chatbot and into your everyday tools. Let's see why that changes things.",
+    "airaOutro": "The future isn't 'go to an AI chatbot.' It's AI working silently inside every tool you already use. Understanding this shift now puts you ahead of most people.",
+    "realWorldScenario": "Zara is a product manager. She used to copy-paste between ChatGPT and her Notion workspace all day. Now she uses Notion AI — she highlights a paragraph and says 'summarize this for stakeholders' without leaving her document. She uses Cursor to code a prototype without opening a separate AI chat. The AI came to her tools, not the other way around.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the main advantage of AI integrated into tools like Notion or Cursor, compared to using ChatGPT separately?",
+        "options": [
+          "It's always smarter than ChatGPT",
+          "It already understands the context of what you're working on",
+          "It's cheaper",
+          "It never makes mistakes because it sees your data"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Embedded AI sees your work context — the document you're editing, the code you're writing, the project you're in. You don't need to explain the context; it's already there. This makes it faster and often more accurate for in-context tasks.",
+        "airaFeedback": {
+          "correct": "Context is everything. When AI can see what you're working on, you skip the whole 'let me explain my situation' step.",
+          "incorrect": "The biggest advantage is context. AI inside your tools already knows what you're working on — no copy-pasting or explaining needed."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "AI-powered coding tools like Cursor can write perfect code that never needs review.",
+        "correctAnswer": false,
+        "explanation": "AI coding tools are impressive assistants, but they write code that can have bugs, security issues, or poor design choices. Every AI-generated code should be reviewed, tested, and understood by a human developer. The tool accelerates your work — it doesn't replace your judgment.",
+        "airaFeedback": {
+          "correct": "Always review. AI is a fast first draft for code, but bugs, security issues, and design choices still need human eyes.",
+          "incorrect": "AI-generated code needs the same review as human-written code — sometimes more. The tool accelerates your work but doesn't replace your judgment."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "The trend of AI moving from standalone chatbots into existing tools is important because:",
+        "options": [
+          "It means chatbots will disappear",
+          "It reduces friction — AI helps you where you already work, not in a separate window",
+          "It makes AI more expensive",
+          "It means you don't need to learn AI skills"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The biggest barrier to using AI is friction — switching apps, explaining context, copy-pasting. When AI is embedded in your tools, that friction disappears. You use AI naturally as part of your workflow, not as a separate step.",
+        "airaFeedback": {
+          "correct": "Less friction, more value. When AI meets you where you work, you use it more naturally and more effectively.",
+          "incorrect": "It's about friction. Every time you switch apps or explain context, you lose time. Embedded AI removes that barrier."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The shift from standalone chatbots to AI inside your tools is about reducing _____ in your workflow.",
+        "correctAnswer": "friction",
+        "explanation": "Friction is anything that slows you down: switching apps, re-explaining context, copy-pasting. The best technology is invisible — it works where you work, when you need it.",
+        "airaFeedback": {
+          "correct": "Friction. The less of it between you and AI, the more useful AI becomes.",
+          "incorrect": "The word is 'friction.' When AI is built into your tools, the barriers between thinking and doing almost disappear."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "multiple_choice",
+        "question": "Which approach to AI will likely be most valuable in 2-3 years?",
+        "options": [
+          "Mastering one specific chatbot deeply",
+          "Understanding how to work with AI across all your tools, regardless of which model powers them",
+          "Memorizing specific prompt templates",
+          "Avoiding AI until it's more mature"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The underlying models change fast. Specific chatbots come and go. But the skill of working with AI — communicating clearly, verifying output, iterating — transfers across every tool. That's the durable skill.",
+        "airaFeedback": {
+          "correct": "That's the long-term play. Models change. Tools change. The skill of working with AI — that's what lasts.",
+          "incorrect": "Models and tools will keep changing. The skill that transfers everywhere is knowing how to work with AI, regardless of which tool you're using."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_013",
+    "title": "Building your prompt library",
+    "topic": "Creating",
+    "difficulty": 3,
+    "description": "The habit that separates power users: saving prompts that work, refining them, reusing them.",
+    "airaIntro": "Here's a habit that takes five minutes to start and saves you hours over time. Power users don't write the same prompts from scratch every time. They build a library.",
+    "airaOutro": "Start small. Save the next prompt that works really well. Over time, you'll build a personal library that makes you faster and better at everything you use AI for.",
+    "realWorldScenario": "Yuki is a content creator who writes LinkedIn posts weekly. Every time she opens ChatGPT, she re-explains her brand voice, audience, and style. One day she saves her best prompt as a template: 'Write a LinkedIn post in my voice: conversational, insightful, under 200 words, targeting tech professionals. Topic: [INSERT].' Now she just fills in the topic. Five seconds instead of five minutes.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Why do power users save their best prompts?",
+        "options": [
+          "To show off to friends",
+          "Because they're too lazy to type new ones",
+          "To skip the setup every time and go straight to quality results",
+          "Because AI requires the exact same prompt to work"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A saved prompt captures all the context, tone, and structural decisions that took time to get right. Reusing it means you start from quality every time instead of rebuilding from scratch.",
+        "airaFeedback": {
+          "correct": "Exactly. A good prompt is a solved problem. Save it, reuse it, and spend your time on the creative part.",
+          "incorrect": "It's about efficiency. A saved prompt captures everything you learned about what works. Why redo that work every time?"
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "A prompt library should be rigid — save prompts exactly as-is and never modify them.",
+        "correctAnswer": false,
+        "explanation": "The best prompt libraries are living systems. You save a template, use it, notice what could be better, and refine it. Think of each prompt as a recipe — you adjust it as you learn.",
+        "airaFeedback": {
+          "correct": "Living systems, not frozen ones. Your best prompts will evolve as you get better and as AI models improve.",
+          "incorrect": "Prompts should evolve. Save them as templates with flexible parts, and refine them each time you use them."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's the most effective way to structure a saved prompt template?",
+        "options": [
+          "Write it out with no variables — keep it exactly the same every time",
+          "Use placeholders like [TOPIC] or [AUDIENCE] for parts that change, keep the structure fixed",
+          "Just bookmark the AI conversation",
+          "Screenshot it on your phone"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Templates with placeholders give you the best of both worlds: the proven structure stays, and you swap in the variable parts. '[TOPIC]' or '[AUDIENCE]' markers make it clear what to customize each time.",
+        "airaFeedback": {
+          "correct": "Placeholders are the key. The structure stays proven, and you just fill in what's new each time.",
+          "incorrect": "The best format uses placeholders — [TOPIC], [AUDIENCE], [TONE] — so the structure stays solid while the specifics change."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "A saved prompt with customizable sections like [TOPIC] or [AUDIENCE] is called a prompt _____.",
+        "correctAnswer": "template",
+        "explanation": "A prompt template is your reusable starting point. Over time, building a library of templates for different tasks — emails, content, analysis, code — makes you dramatically faster.",
+        "airaFeedback": {
+          "correct": "Template. Simple concept, massive time savings. Start collecting yours.",
+          "incorrect": "The word is 'template.' It's a reusable structure with slots for the parts that change."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Create a prompt template for generating a weekly email newsletter. Use [PLACEHOLDERS] for the parts that change each week.",
+        "correctAnswer": ["newsletter", "topic", "audience"],
+        "explanation": "A solid template: 'Write a weekly newsletter for [AUDIENCE]. This week's main topic: [TOPIC]. Include: an engaging opener, 2-3 key insights about the topic, one actionable tip, and a warm closing. Tone: [TONE]. Length: under 400 words.' Now you just fill in the brackets each week.",
+        "airaFeedback": {
+          "correct": "That's a template you could use for months. Fill in the brackets, get consistent quality. This is how power users work.",
+          "incorrect": "Include placeholders for the variable parts: [AUDIENCE], [TOPIC], [TONE]. The rest of the structure should stay the same each week."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_014",
+    "title": "One weekend, one project",
+    "topic": "Creating",
+    "difficulty": 4,
+    "description": "Using AI to take an idea from zero to something real in a weekend. Mindset more than mechanics.",
+    "airaIntro": "Everything we've learned comes together here. You have an idea. You have a weekend. And you have AI as a collaborator. Let's talk about how to actually ship something.",
+    "airaOutro": "The gap between 'I have an idea' and 'I built a thing' has never been smaller. The skills you've built in this app are the bridge. Now go build something this weekend.",
+    "realWorldScenario": "Sam wants to build a simple website for her photography portfolio. She doesn't know how to code. Over one weekend, she uses AI to plan the layout, generate the HTML/CSS, write her about page copy, and troubleshoot problems. By Sunday night, her portfolio is live. She didn't become a developer — she became someone who can make things with AI.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Sam wants to build a portfolio site with no coding experience. What's the best first step with AI?",
+        "options": [
+          "Ask AI to build the entire site in one message",
+          "Start by describing her vision and ask AI to help plan the structure and layout",
+          "Copy a template from the internet instead",
+          "Spend a month learning to code first"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Start with planning, not building. 'I want a photography portfolio with an about page, gallery, and contact form. Help me plan the structure.' The AI becomes a collaborator in the thinking phase, not just a code generator.",
+        "airaFeedback": {
+          "correct": "Plan first, build second. When you include AI in the thinking phase, the building phase goes much smoother.",
+          "incorrect": "The best projects start with a plan. Ask AI to help you think through the structure before jumping into building."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "You need to be an expert in a field before AI can help you build something in that field.",
+        "correctAnswer": false,
+        "explanation": "That's the old model. AI lowers the skill floor dramatically. You need taste, direction, and willingness to iterate — not expertise in every technical detail. Sam isn't a developer, but she can describe what she wants and refine what AI produces.",
+        "airaFeedback": {
+          "correct": "The new skill isn't expertise in everything — it's knowing what you want and being able to direct AI toward it.",
+          "incorrect": "You don't need to be an expert. You need to be specific about what you want and willing to iterate on what AI gives you."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Your AI-assisted weekend project isn't working as planned. What's the best approach?",
+        "options": [
+          "Scrap it and start with a different project",
+          "Reduce the scope — ship a simpler version that works, then improve later",
+          "Spend another week on it to get it perfect",
+          "Blame the AI and give up"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The number one skill in building things: scope management. A working simple version beats an unfinished complex one every time. Ship something that works, then improve it. This is how real products are built.",
+        "airaFeedback": {
+          "correct": "That's the builder mindset. A simple thing that works beats a complex thing that doesn't. Scope down, ship, improve.",
+          "incorrect": "When things get complicated, scope down. A finished simple version is infinitely more valuable than an unfinished complex one."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The most important skill in a weekend project is _____ management — knowing what to build and what to cut.",
+        "correctAnswer": "scope",
+        "explanation": "Scope management is the difference between someone who ships and someone who's permanently 'almost done.' Define the minimum thing that works, build that first, then add nice-to-haves if there's time.",
+        "airaFeedback": {
+          "correct": "Scope management. The people who ship things know this word very well.",
+          "incorrect": "The word is 'scope.' Knowing what to include and what to cut is the difference between shipping and not shipping."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You want to build a simple personal budget tracker this weekend. Write an initial planning prompt for AI that includes your goal, timeframe, and skill level.",
+        "correctAnswer": ["budget", "weekend", "build"],
+        "explanation": "A strong planning prompt: 'I want to build a simple personal budget tracker this weekend. I have basic spreadsheet skills but no coding experience. I need: a way to log expenses by category, see monthly totals, and view a simple chart. What's the simplest approach to build this, and can you help me plan the steps?' Clear goal, honest skill level, specific needs.",
+        "airaFeedback": {
+          "correct": "Clear goal, honest about your level, specific about what you need. This is how you start a weekend project that actually gets finished.",
+          "incorrect": "Include: what you want to build, what skills you have, and what features matter most. Honesty about your level helps the AI suggest the right approach."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_015",
+    "title": "Becoming the kind of person who thinks with AI",
+    "topic": "Creating",
+    "difficulty": 5,
+    "description": "The closing lesson. Not about tools — about how you approach problems. This one should feel earned.",
+    "airaIntro": "We've come a long way together. This last lesson isn't about techniques or tools. It's about something bigger — the kind of thinker you're becoming.",
+    "airaOutro": "You started this journey to learn about AI. But what you actually learned is how to think more clearly, ask better questions, and trust yourself to verify what's true. Those skills aren't about AI — they're about you. I'm proud of where you are. Keep going.",
+    "realWorldScenario": "Alex started using AI three months ago to write emails. Now he uses it to plan projects, analyze data, learn new subjects, and build things he never thought he could. But the biggest change isn't what he can do with AI — it's how he thinks. He asks better questions. He's skeptical of confident answers. He breaks big problems into steps. AI didn't make him smarter. It made him more intentional about how he thinks.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the most valuable thing about learning to use AI well?",
+        "options": [
+          "You can do your work faster",
+          "You develop better thinking skills — asking clearer questions, verifying information, breaking down problems",
+          "You don't need to learn anything else",
+          "You can replace other people's jobs"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The meta-skill is the real prize. Learning to prompt well means learning to think clearly, communicate precisely, and evaluate information critically. These skills make you better at everything, not just AI.",
+        "airaFeedback": {
+          "correct": "That's the insight most people miss. AI didn't just give you a tool — it sharpened how you think.",
+          "incorrect": "Speed is nice, but it's not the deepest value. The real transformation is in how you think — clearer questions, better reasoning, stronger judgment."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Being good at AI means never needing to think hard about a problem yourself.",
+        "correctAnswer": false,
+        "explanation": "It's the opposite. AI amplifies thinking — it doesn't replace it. The best AI users think harder, not less. They use AI to explore more angles, consider more options, and challenge their own assumptions. The thinking is still yours.",
+        "airaFeedback": {
+          "correct": "If anything, the best AI users think harder. They use AI to explore more, question more, and understand more deeply.",
+          "incorrect": "AI amplifies your thinking — it doesn't replace it. The people who get the most from AI are the ones who still do their own hard thinking."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "A friend says: 'AI will make human skills irrelevant.' What's the most thoughtful response?",
+        "options": [
+          "They're right — start learning AI and nothing else",
+          "They're wrong — AI is just a fad",
+          "Human skills like critical thinking, creativity, and judgment become MORE important because AI handles the routine parts",
+          "It depends on whether AI becomes sentient"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When AI handles the routine, human skills become the differentiator. The people who thrive are those who combine AI capability with human judgment, creativity, and the ability to ask the right questions in the first place.",
+        "airaFeedback": {
+          "correct": "That's the nuanced take. AI handles the routine. The human parts — judgment, creativity, empathy — become the differentiator.",
+          "incorrect": "Neither panic nor dismissal. The truth is: AI makes human skills more important, not less. When everyone has AI, the human element is what stands out."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The goal isn't to depend on AI — it's to think _____ AI as a partner in your work and learning.",
+        "correctAnswer": "with",
+        "explanation": "Think with AI, not against it, and not instead of thinking. AI as a partner means you bring the direction, judgment, and creativity. AI brings speed, breadth, and pattern recognition. Together, you're better than either alone.",
+        "airaFeedback": {
+          "correct": "Think with AI. That's what this whole journey has been about. You're the thinker. AI is the amplifier.",
+          "incorrect": "With. Think with AI — as a partner, not a replacement. You bring the direction. AI brings the speed. Together, it works."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a brief reflection: what's one thing you'll do differently now that you understand how to think with AI? Be honest and specific.",
+        "correctAnswer": ["think", "AI"],
+        "explanation": "There's no single right answer here. Some people will verify AI claims before sharing them. Others will start iterating instead of accepting the first response. Some will use AI to tackle projects they'd never have attempted. The important thing is that you're thinking about it — that awareness is the real skill.",
+        "airaFeedback": {
+          "correct": "The fact that you're reflecting on this means you've already changed how you think. That's the real graduation.",
+          "incorrect": "Take a moment with this one. It's not about a right answer — it's about what genuinely changed for you. What will you actually do differently?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_016",
+    "title": "Setting the stage: context is everything",
+    "topic": "Foundations",
+    "difficulty": 1,
+    "description": "Before you ask anything, set the scene. Who are you, what are you doing, why does it matter — that's the context AI needs.",
+    "airaIntro": "If specificity is the WHAT, context is the WHY. The same question coming from a doctor and a high-school student deserves very different answers. Your job is to tell the AI which one you are.",
+    "airaOutro": "Context is the cheapest upgrade you can give any prompt. Two extra sentences about who you are and why you're asking can change the whole answer.",
+    "realWorldScenario": "Sara is a nurse asking about medication interactions. She types: 'Can you take ibuprofen with aspirin?' She gets a generic, hedged answer. When she says: 'I'm a nurse triaging a 65-year-old patient on low-dose aspirin who needs pain relief — what should I consider?' — the AI gives her clinical-grade considerations.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Which prompt opening gives the AI the most useful context?",
+        "options": [
+          "Quick question about budgets...",
+          "I'm a first-time freelancer setting up my pricing for design work, and I've never charged anyone before. Help me think through hourly rates.",
+          "How much should I charge?",
+          "freelance pricing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The second prompt establishes the situation (freelancer), the experience level (first-time, never charged), and the topic (design work, hourly rates). The AI can now tailor its answer instead of guessing whether you're a senior consultant or a teenager.",
+        "airaFeedback": {
+          "correct": "Yes. You painted a picture before you asked the question — that's how the AI knows where to aim.",
+          "incorrect": "Look for the prompt that tells the AI WHO is asking and WHY. That framing changes the whole answer."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Telling the AI your background or role is unnecessary — a good AI will give the same quality answer either way.",
+        "correctAnswer": false,
+        "explanation": "AI tailors its tone, depth, and assumptions based on what you tell it about yourself. A 'beginner' label gets simpler explanations; a 'senior engineer' label gets technical depth. Hiding context costs you quality.",
+        "airaFeedback": {
+          "correct": "Right. The AI can't see you. It only knows what you tell it.",
+          "incorrect": "Think about how a doctor would explain the same diagnosis to a colleague vs to a worried parent. AI does the same — but only if you tell it which one you are."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's the most efficient way to add context to a prompt?",
+        "options": [
+          "Write a long paragraph about your entire life",
+          "Add 1-3 sentences covering who you are, what you're doing, and what you need",
+          "Don't bother — the AI will figure it out",
+          "Just keep adding follow-up questions until it gets it"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Context isn't a biography — it's a quick situational frame. Three sharp sentences usually beat three paragraphs. Identity, situation, goal: that's the whole formula.",
+        "airaFeedback": {
+          "correct": "Tight and clear. You don't need to write your memoir — just enough so the AI knows where to aim.",
+          "incorrect": "Context should be efficient, not exhaustive. A few sentences is enough — just identity, situation, and goal."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The three things to include in good context are: identity, situation, and _____.",
+        "correctAnswer": "goal",
+        "explanation": "Identity (who you are), situation (what you're dealing with), and goal (what you want to happen). These three things turn a vague question into a useful one almost every time.",
+        "airaFeedback": {
+          "correct": "Identity, situation, goal. A simple formula you'll use thousands of times.",
+          "incorrect": "We're looking for what you actually want the AI to help you achieve — your goal."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You're learning Spanish and want help. Write a prompt that includes who you are, your level, and what you specifically want practice with.",
+        "correctAnswer": ["spanish", "level", "practice"],
+        "explanation": "A strong version: 'I'm an English speaker at A2 level in Spanish — I can hold basic conversations but freeze on past tense. Can you give me 5 short practice dialogues using past tense verbs?' Now the AI knows exactly where to meet you.",
+        "airaFeedback": {
+          "correct": "That's the move — you set the stage so the AI doesn't have to guess where you are.",
+          "incorrect": "Try including your current level (so it's not too easy or hard), and the specific thing you want to practice. Identity, situation, goal."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_017",
+    "title": "What you assume, the AI doesn't know",
+    "topic": "Foundations",
+    "difficulty": 2,
+    "description": "Hidden assumptions are the silent killers of good prompts. The things you take for granted are exactly what you need to spell out.",
+    "airaIntro": "Here's a sneaky one. The reason your prompt didn't work is usually something so obvious to you that you forgot to say it. The AI isn't psychic — it can only see the words you wrote.",
+    "airaOutro": "Get into the habit of asking yourself: what am I assuming here that the AI couldn't possibly know? That single question will save you hours.",
+    "realWorldScenario": "Tom asks: 'Write me an email asking for a meeting.' He gets a perfectly polite, completely generic email. What he forgot to mention: it's to his ex-coworker, it's about a possible job opportunity, the tone should be casual, and they haven't talked in two years. All things he 'knew' — but the AI couldn't.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Tom's email came out generic. What did he most likely forget to include?",
+        "options": [
+          "More keywords",
+          "The relationship, the purpose, and the tone — things he assumed were obvious",
+          "A spell check",
+          "His full name"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The AI doesn't know who you're writing to, why, or how casual you want to sound — unless you say it. Hidden context is invisible to the model. Spell it out.",
+        "airaFeedback": {
+          "correct": "Exactly. The stuff that feels too obvious to mention is usually the most important to say.",
+          "incorrect": "Think about what's obvious to Tom but invisible to the AI. The relationship, the purpose, the desired tone — none of that came through."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "If something feels obvious to you, you can safely leave it out of the prompt.",
+        "correctAnswer": false,
+        "explanation": "Almost the opposite. The things that feel obvious are often the things only YOU know — your role, your audience, your stakes. Those are exactly what to include.",
+        "airaFeedback": {
+          "correct": "Right. 'Obvious to me' usually means 'completely invisible to the AI.'",
+          "incorrect": "Flip your instinct. The 'obvious' details are exactly the hidden assumptions you need to make explicit."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's a fast way to surface hidden assumptions in your prompt?",
+        "options": [
+          "Use longer words",
+          "Reread the prompt and ask: 'Could a stranger answer this without knowing me?'",
+          "Add more emojis",
+          "Always ask the AI to guess"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The 'stranger test' is the fastest sanity check. If a smart stranger couldn't write a useful answer from your prompt alone, you've got hidden assumptions to flush out.",
+        "airaFeedback": {
+          "correct": "The stranger test. Short, brutal, effective. Use it on every important prompt.",
+          "incorrect": "Try imagining a stranger reading your prompt with zero context about you. What would they need to know to answer well?"
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The things that feel _____ to you are often the most important to spell out.",
+        "correctAnswer": "obvious",
+        "explanation": "Obvious things hide in plain sight. They're so familiar to you that you stop seeing them. The AI never had a chance to see them in the first place.",
+        "airaFeedback": {
+          "correct": "Obvious. The whole game is making invisible assumptions visible.",
+          "incorrect": "We're looking for the word that describes assumptions you don't realize you're making — the things that feel too obvious to say."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Take this vague prompt and rewrite it surfacing hidden assumptions: 'Help me write a thank-you message.' Include who it's for, what they did, and the tone you want.",
+        "correctAnswer": ["thank", "for", "tone"],
+        "explanation": "A strong version: 'Help me write a thank-you message to my mentor who spent 2 hours reviewing my portfolio last week. Warm but professional tone — about 4 sentences, not gushy.' Every hidden detail made visible.",
+        "airaFeedback": {
+          "correct": "Beautiful. You named the recipient, the reason, and the tone. No more guessing for the AI.",
+          "incorrect": "Try naming three things: who it's for, what specifically they did, and how you want it to sound."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_018",
+    "title": "Saying what you DON'T want",
+    "topic": "Foundations",
+    "difficulty": 2,
+    "description": "Half of getting a great answer is telling the AI what to avoid. Negative constraints are an underused superpower.",
+    "airaIntro": "Most people only tell the AI what they want. The pros also tell it what they DON'T want. 'No bullet points.' 'Don't be cheesy.' 'Skip the disclaimers.' These guardrails shape the answer just as much as the ask.",
+    "airaOutro": "Negative constraints feel small but they're a force multiplier. Pair them with your positive instructions and you'll waste fewer rounds rewriting things.",
+    "realWorldScenario": "Aisha asks for a wedding speech. The AI gives her something painfully cheesy with 'when two souls become one.' She tries again: 'Write a wedding speech for my best friend. Funny, warm, 90 seconds long. Avoid clichés like soulmates, journey, and forever. No quotes from poets.' Suddenly the speech is actually her.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Aisha's first attempt was too cheesy. What's the smartest fix?",
+        "options": [
+          "Just keep regenerating until it gets better",
+          "Add explicit negative constraints — what to avoid",
+          "Switch to a different AI",
+          "Write the whole thing herself"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Negative constraints — 'don't use X, avoid Y, skip Z' — are the fastest way to steer an answer away from clichés and patterns the AI defaults to. Tell it what NOT to do.",
+        "airaFeedback": {
+          "correct": "Yes. Don't fight defaults — name them and ban them.",
+          "incorrect": "The AI has default patterns it falls into (clichés, hedges, fluff). The fastest fix is to name them and tell it not to do them."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Telling the AI what NOT to do is just as important as telling it what to do.",
+        "correctAnswer": true,
+        "explanation": "Constraints work in both directions. Positive instructions tell the AI where to aim; negative constraints keep it away from defaults you don't want. You need both.",
+        "airaFeedback": {
+          "correct": "Both directions. Steering and brakes.",
+          "incorrect": "Think of it like driving — you need both the steering (positive instructions) and the brakes (negative constraints)."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which is the strongest example of a negative constraint?",
+        "options": [
+          "Make it good",
+          "Don't use bullet points, jargon, or the phrase 'in conclusion'",
+          "Be helpful",
+          "Write it well"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The second is concrete: it names exactly the patterns to avoid. 'Make it good' is so vague the AI can't act on it. Specificity matters in negatives just as much as in positives.",
+        "airaFeedback": {
+          "correct": "That's the texture you want — concrete things to avoid, named explicitly.",
+          "incorrect": "Specific negative constraints — actual words and patterns to avoid — work. Vague ones don't."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Telling the AI what to _____ is sometimes more powerful than telling it what to do.",
+        "correctAnswer": "avoid",
+        "explanation": "Avoidance instructions cut through default patterns the AI tends to fall into. They're how you steer the answer away from cliché.",
+        "airaFeedback": {
+          "correct": "Avoid. Simple word, big lever.",
+          "incorrect": "We're looking for the word that means 'don't do' — what you tell the AI to stay away from."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a prompt asking for a bio for a portfolio site, including at least 2 negative constraints (things to avoid).",
+        "correctAnswer": ["bio", "avoid", "no"],
+        "explanation": "A strong version: 'Write a 60-word bio for my design portfolio. Avoid corporate buzzwords like passionate, innovative, results-driven. No third person — write it in first person. Tone: confident but warm.' The negatives shape it as much as the positives.",
+        "airaFeedback": {
+          "correct": "Look at that — you've already started thinking like a power user. Steering and brakes, both engaged.",
+          "incorrect": "Include at least two specific things to avoid — buzzwords, formats, tones, anything you don't want. Spell them out."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_019",
+    "title": "Reading between the lines of an AI answer",
+    "topic": "Critical Thinking",
+    "difficulty": 2,
+    "description": "Not every confident sentence is a true sentence. Learn to spot the soft spots in any AI response.",
+    "airaIntro": "AI answers always sound confident. That's a feature and a trap. Your job isn't to trust them — it's to read them like a sharp editor would. Today we practice that muscle.",
+    "airaOutro": "Confidence is not evidence. The more useful AI becomes, the more important it gets to read its answers with one eyebrow raised. Skepticism is a skill.",
+    "realWorldScenario": "Diego asks the AI for the population of his hometown in Argentina. The answer comes back with a precise number and zero hedging. Diego, who grew up there, knows the real number is roughly half what the AI said. The AI was confident. The AI was wrong.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the BEST mental rule for reading any AI response?",
+        "options": [
+          "If it sounds confident, it's true",
+          "Treat confidence as a style, not a measure of accuracy — verify what matters",
+          "Trust everything as long as it's well-formatted",
+          "Only trust short answers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "AI is trained to sound confident regardless of whether it's right. Confidence is a property of the writing style, not the truth. For anything that matters, verify.",
+        "airaFeedback": {
+          "correct": "That distinction — confidence is style, not truth — will protect you for years.",
+          "incorrect": "Confidence in AI is an interface choice, not a sign of accuracy. The AI sounds the same whether it's right or completely making things up."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "If the AI gives you specific numbers, dates, or quotes, you should always double-check them before relying on them.",
+        "correctAnswer": true,
+        "explanation": "Specific facts — numbers, dates, names, quotes, citations — are the easiest places for AI to hallucinate confidently. They're also the highest-stakes things to get wrong. Always verify.",
+        "airaFeedback": {
+          "correct": "Yes. Specifics are where confident hallucinations live. Check the small things.",
+          "incorrect": "Numbers, dates, and quotes are exactly where AI quietly invents things while sounding 100% sure. Always verify them."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which kind of AI claim deserves the MOST skepticism?",
+        "options": [
+          "A general definition of a common word",
+          "A specific statistic, date, or quote attributed to a real person",
+          "An obvious opinion about taste",
+          "A summary of a famous book"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The most dangerous claims are specific, attributable, and verifiable in principle but rarely verified in practice. That's exactly where confident invention happens — and the cost of being wrong is highest.",
+        "airaFeedback": {
+          "correct": "Right. The more verifiable a claim is, the more important it is to actually verify it.",
+          "incorrect": "Specific facts attributed to real sources — that's where AI invention is most dangerous, because it sounds the most authoritative."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "AI confidence is a property of the writing _____, not the truth.",
+        "correctAnswer": "style",
+        "explanation": "AI is trained to write smoothly and authoritatively. That style sounds the same whether the underlying claim is right or completely fabricated.",
+        "airaFeedback": {
+          "correct": "Style. Once you see it, you can't unsee it.",
+          "incorrect": "Think about what makes confident writing FEEL true even when it isn't — it's the way it's written, not what it says."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a follow-up prompt you'd send to an AI to pressure-test a confident factual claim it just made.",
+        "correctAnswer": ["sure", "source", "verify"],
+        "explanation": "A strong version: 'How sure are you about that specific claim? What's your source, and what would I need to verify to confirm it? Where might you be wrong?' This forces the AI to expose its own uncertainty.",
+        "airaFeedback": {
+          "correct": "Beautiful. You're making the AI show its work — that's the move.",
+          "incorrect": "Try asking the AI directly how confident it is, what its source is, and where it might be wrong. Force it out of its smooth default."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_020",
+    "title": "The danger of plausible nonsense",
+    "topic": "Critical Thinking",
+    "difficulty": 3,
+    "description": "Hallucinations don't always look like errors. Sometimes they look like the most reasonable answer in the room.",
+    "airaIntro": "We talked about confident wrong answers. Now let's go deeper. The trickiest hallucinations aren't obviously absurd — they're plausible. They sound like exactly what you expected to hear. That's what makes them dangerous.",
+    "airaOutro": "The hardest lies to catch are the ones you wanted to be true. Build the habit of pausing on answers that feel TOO right. That's where the danger lives.",
+    "realWorldScenario": "A law student asks the AI for case law supporting an argument. It cites three cases by name, year, and court. They sound real. They're not. The student would have submitted them — except a senior partner ran a quick check. Plausible doesn't mean real.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What makes a hallucination dangerous, NOT that it sounds wrong?",
+        "options": [
+          "It's hard to read",
+          "It sounds exactly like what you expected to hear",
+          "It's always in a foreign language",
+          "It uses big words"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Plausible hallucinations are dangerous BECAUSE they match your expectations. You don't pause on them. You don't verify. You just believe them and pass them along.",
+        "airaFeedback": {
+          "correct": "Exactly. The plausibility is the camouflage.",
+          "incorrect": "The danger isn't obvious nonsense — it's nonsense that sounds reasonable. That's the kind that slips past your filters."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "If an AI answer matches what you expected, you can skip verifying it.",
+        "correctAnswer": false,
+        "explanation": "The opposite is closer to true. When the answer matches your expectations, you're MORE likely to accept a hallucination uncritically. Confirmation bias is the AI's best friend.",
+        "airaFeedback": {
+          "correct": "Right. 'Sounds right' is when you should be the most careful, not the least.",
+          "incorrect": "When the answer matches your expectations, you skip the verification step. That's exactly the moment you need to slow down."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which kind of question is MOST likely to produce a plausible-but-wrong answer?",
+        "options": [
+          "Math questions with one right answer",
+          "Questions that have a specific factual answer the AI might not actually know",
+          "Questions about your own opinion",
+          "Questions about the weather right now"
+        ],
+        "correctAnswer": 1,
+        "explanation": "When the AI doesn't actually know but the question has a specific shape — a name, a date, a citation — it tends to generate something that LOOKS like the right shape, even if the content is invented.",
+        "airaFeedback": {
+          "correct": "Yes. Shape over substance — the AI fills the slot whether or not it has the real answer.",
+          "incorrect": "Specific factual questions are dangerous because the AI generates something that matches the SHAPE of an answer, even if the content is invented."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The most dangerous hallucinations are not absurd — they are _____.",
+        "correctAnswer": "plausible",
+        "explanation": "Absurd hallucinations get caught instantly. Plausible ones slip past — and those are the ones that end up in your essay, your report, your court filing.",
+        "airaFeedback": {
+          "correct": "Plausible. The word that should make you slow down.",
+          "incorrect": "We're looking for the word that describes hallucinations that sound reasonable enough to believe."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a habit or self-check you could use BEFORE accepting any factual claim from an AI. State your rule in 1-2 sentences.",
+        "correctAnswer": ["check", "verify", "if"],
+        "explanation": "A strong version: 'If the claim is specific and matters, I check at least one independent source before using it. If I can't verify it in 60 seconds, I don't use it as fact.' A simple, repeatable rule.",
+        "airaFeedback": {
+          "correct": "That's a real habit, not a vague hope. Habits beat intentions every time.",
+          "incorrect": "Try writing a concrete rule — what you'll actually do, in plain language. Something you could remember and use tomorrow."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_021",
+    "title": "When the AI agrees with everything you say",
+    "topic": "Critical Thinking",
+    "difficulty": 3,
+    "description": "AI is trained to be agreeable — sometimes too agreeable. Learn to spot sycophancy and break out of it.",
+    "airaIntro": "Here's a quiet trap: the AI will often agree with you just because you sound confident. Push back on its own answer and it'll cave instantly. That's not honest — that's polite. Learn the difference.",
+    "airaOutro": "If you want a thinking partner instead of a yes-machine, you have to actively ask for pushback. Otherwise you're just rephrasing your own opinions back to yourself.",
+    "realWorldScenario": "Maya runs a business idea past the AI. It's enthusiastic. She says: 'Actually I think this idea is bad — what are the risks?' Suddenly the AI lists serious problems it didn't mention before. The risks were always there. She just had to ask for them.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the simplest test for whether an AI is being sycophantic?",
+        "options": [
+          "Ask it the same question 10 times",
+          "Push back on its answer and see if it folds without offering real reasons",
+          "Use a different language",
+          "Restart the chat"
+        ],
+        "correctAnswer": 1,
+        "explanation": "If you say 'actually I disagree' and the AI immediately reverses without strong reasons, it was being agreeable, not honest. A thinking partner pushes back; a yes-machine folds.",
+        "airaFeedback": {
+          "correct": "Yes. Watch what happens when you disagree. That's the real test.",
+          "incorrect": "Push back on the AI's own answer. If it folds without actually defending its position, you were getting agreement, not analysis."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "If you want honest critical feedback from an AI, you should explicitly ask for it.",
+        "correctAnswer": true,
+        "explanation": "AI defaults to encouragement and agreement. Honest critique is something you have to actively request — 'tell me why this might fail,' 'list the strongest objections,' 'play devil's advocate.' Ask and you'll receive.",
+        "airaFeedback": {
+          "correct": "Right. You don't get critique by accident. You get it by asking.",
+          "incorrect": "AI defaults to being supportive. If you want real critique, you have to ask for it explicitly."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which prompt is MOST likely to get you honest, critical feedback?",
+        "options": [
+          "What do you think of my plan?",
+          "Be brutally honest — list the 3 strongest reasons this plan could fail, with no softening.",
+          "Tell me if this is good",
+          "Is this idea ok?"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The second prompt explicitly asks for criticism, gives a number, and bans softening. It removes every excuse the AI has to default to encouragement. Specificity beats hope every time.",
+        "airaFeedback": {
+          "correct": "That's how you unlock real critique — explicit, specific, no escape hatch.",
+          "incorrect": "Vague questions get vague (and usually positive) answers. Ask for specific criticism, name the number, and ban softening."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "AI defaults to being agreeable and supportive. To get real critique, you have to _____ for it.",
+        "correctAnswer": "ask",
+        "explanation": "Critique isn't the default mode. You have to actively request it — and the more explicit you are, the better the critique you get back.",
+        "airaFeedback": {
+          "correct": "Ask. You don't get the answer you didn't request.",
+          "incorrect": "We're looking for the simple verb — the thing you have to do to get critique that the AI won't volunteer on its own."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a follow-up you'd send after getting an enthusiastic AI response — designed to break through sycophancy and get real pushback.",
+        "correctAnswer": ["wrong", "honest", "objection"],
+        "explanation": "A strong version: 'Drop the encouragement. What are the 3 strongest objections to what you just said? Where am I most likely to be wrong? Be honest, not nice.' That breaks the sycophancy loop.",
+        "airaFeedback": {
+          "correct": "That's the move. Permission to be honest is what AI needs to actually be useful.",
+          "incorrect": "Try explicitly giving the AI permission to disagree with you, and asking for the strongest objections. 'Be honest, not nice' is a magic phrase."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_022",
+    "title": "The example trick: showing instead of telling",
+    "topic": "Practical",
+    "difficulty": 2,
+    "description": "Sometimes one good example beats a paragraph of instructions. This is called few-shot prompting, and it's a power move.",
+    "airaIntro": "Here's a technique that feels like magic the first time you use it. Instead of describing what you want, show the AI an example or two — then ask it to continue the pattern. Your hit rate goes through the roof.",
+    "airaOutro": "Showing beats telling. Whenever you find yourself writing a long description of what you want, ask: could I just give one example instead? Usually you can.",
+    "realWorldScenario": "Carlos needs to rewrite 20 product descriptions in a punchier style. He could write 500 words explaining the style. Instead, he gives the AI two examples: one bad, one good. Then he says 'rewrite the rest in the second style.' Done in two minutes.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What is 'few-shot prompting'?",
+        "options": [
+          "Asking the AI very quickly",
+          "Showing the AI 1-3 examples of what you want, then asking it to follow the pattern",
+          "Using lots of follow-up questions",
+          "Restarting the chat several times"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Few-shot prompting means giving the AI a small number of examples ('shots') before your real ask. The AI learns the pattern from your examples and applies it. It's one of the most reliable ways to control output style.",
+        "airaFeedback": {
+          "correct": "Yes. A few examples can teach the AI more than a paragraph of instructions ever could.",
+          "incorrect": "Few-shot means giving the AI a few examples of what you want before your actual request. The AI picks up the pattern from your examples."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Showing the AI an example of what you want is often more effective than describing it in words.",
+        "correctAnswer": true,
+        "explanation": "Examples are dense — they carry tone, structure, vocabulary, and length all at once. Words about the example would take ten times longer to convey the same thing.",
+        "airaFeedback": {
+          "correct": "Right. Examples compress instructions into a form the AI reads instantly.",
+          "incorrect": "An example carries tone, format, and feel all at once — much faster than words can describe."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "When is few-shot prompting MOST useful?",
+        "options": [
+          "When you want generic, average output",
+          "When you need a specific style, format, or tone the AI doesn't naturally produce",
+          "When the answer is one word",
+          "When you don't know what you want"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Few-shot shines when you need to nudge the AI off its defaults — into a specific voice, structure, or format. The example IS the instruction.",
+        "airaFeedback": {
+          "correct": "Exactly. When defaults aren't enough, an example pulls the AI to where you actually want it.",
+          "incorrect": "Few-shot is most useful when you need something off the AI's default style — examples teach what words can't easily describe."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Few-shot prompting means giving the AI a few _____ before asking it to follow the pattern.",
+        "correctAnswer": "examples",
+        "explanation": "Examples ARE the instructions in few-shot prompting. The AI learns by pattern-matching, and your examples set the pattern.",
+        "airaFeedback": {
+          "correct": "Examples. The trick that feels like magic the first time.",
+          "incorrect": "Think about what 'shots' refers to — the things you SHOW the AI before your real request."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write a few-shot prompt asking the AI to convert formal sentences into casual ones, including 1 example of the conversion you want.",
+        "correctAnswer": ["formal", "casual", "example"],
+        "explanation": "A strong version: 'Convert formal sentences to casual ones. Example — Formal: \"I am writing to inquire about the status of my order.\" Casual: \"Hey, just checking on my order — any updates?\" Now do this one: [your sentence].' The example does most of the teaching.",
+        "airaFeedback": {
+          "correct": "That's it. The example carries more instruction than a paragraph could.",
+          "incorrect": "Include at least one before/after pair so the AI sees exactly what conversion you want. Show, don't tell."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_023",
+    "title": "Breaking big problems into small ones",
+    "topic": "Practical",
+    "difficulty": 3,
+    "description": "Don't try to do everything in one prompt. Decomposing a big task into small ones is how pros get reliable results.",
+    "airaIntro": "Beginners try to do everything in one massive prompt. Pros do the opposite — they break the work into small, focused steps, each of which the AI can nail. It's slower per step but faster overall, because it actually works.",
+    "airaOutro": "When in doubt, break it down. Smaller steps mean more control, fewer mistakes, and easier debugging. The 'one perfect prompt' is a myth — the chain of small ones is the real craft.",
+    "realWorldScenario": "Priya is launching a podcast and asks the AI: 'Help me launch my podcast.' She gets a generic checklist. Then she breaks it down: 1) Help me name it. 2) Now help me write the intro script. 3) Now write the first episode outline. 4) Now draft a launch email. Each step is sharp. Each step works.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Why is breaking a big task into smaller prompts often more effective?",
+        "options": [
+          "It uses more tokens",
+          "Each step is focused, easier to verify, and easier to fix when something goes wrong",
+          "The AI gets tired",
+          "It looks more professional"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Small steps give you control points. You can verify each result before moving on, and when something's off, you know exactly which step to fix. Big monolithic prompts hide their failures.",
+        "airaFeedback": {
+          "correct": "Yes. Control over each step beats hope for one perfect output.",
+          "incorrect": "Smaller steps give you checkpoints — places to verify, adjust, and catch mistakes before they compound."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "The best way to handle a complex task is to write one giant prompt that covers everything.",
+        "correctAnswer": false,
+        "explanation": "Giant prompts often produce mediocre, scattered results because the AI tries to balance too many things at once. Breaking the task into focused steps almost always produces better quality.",
+        "airaFeedback": {
+          "correct": "Right. The 'one perfect prompt' is a beginner fantasy. Decomposition is the craft.",
+          "incorrect": "Big prompts try to do too much at once — the AI loses focus and quality drops. Break it down."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's a sign that you should break your prompt into smaller steps?",
+        "options": [
+          "It contains more than one verb-action ('do X, then Y, then Z')",
+          "It has any punctuation",
+          "It's longer than 5 words",
+          "You're using a paid AI model"
+        ],
+        "correctAnswer": 0,
+        "explanation": "If your prompt contains multiple distinct actions ('research, then summarize, then write'), each one deserves its own focused turn. One verb per prompt is a useful rule of thumb.",
+        "airaFeedback": {
+          "correct": "One verb per prompt — a simple test that catches most overloaded asks.",
+          "incorrect": "If your prompt is asking for multiple distinct actions, that's the signal. One step per prompt is the rule of thumb."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Breaking a big problem into smaller steps is called _____.",
+        "correctAnswer": "decomposition",
+        "explanation": "Decomposition is the craft of turning a vague big task into a chain of small, sharp ones. It's how reliable AI work actually gets done.",
+        "airaFeedback": {
+          "correct": "Decomposition. A fancy word for a very practical habit.",
+          "incorrect": "We're looking for the word that means breaking something complex into smaller parts."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Take this big task and write the FIRST of 4 smaller prompts: 'Plan a 3-day workshop on prompt engineering.' Just write step 1 — the first focused prompt you'd send.",
+        "correctAnswer": ["first", "step", "workshop"],
+        "explanation": "A strong version: 'For a 3-day workshop on prompt engineering, give me 5 candidate themes for what each day could focus on. Don't write the schedule yet — just the daily themes.' One sharp step. The next prompts build on this one.",
+        "airaFeedback": {
+          "correct": "Beautiful. That's a focused first step you can verify before moving to the next.",
+          "incorrect": "Pick ONE thing — like naming the days, or listing themes — and ask just for that. Save the rest for follow-up prompts."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_024",
+    "title": "Iterating: the second prompt is the real one",
+    "topic": "Practical",
+    "difficulty": 3,
+    "description": "Your first prompt is rarely the final one. Treating each AI response as a draft to react to is where the real quality comes from.",
+    "airaIntro": "Most beginners send one prompt, get one answer, and walk away. The pros treat the first response as a draft — something to react to and refine. The conversation IS the craft.",
+    "airaOutro": "Stop treating your first prompt as your last prompt. The second, third, and fourth turns are where the AI starts to give you what you actually wanted.",
+    "realWorldScenario": "Jake asks the AI to write a cover letter. The first draft is fine but a little stiff. Instead of giving up, he says: 'Make the second paragraph more personal — mention I switched careers from teaching.' Now: 'Cut 30 words from the third paragraph.' Now: 'End with a question instead of a statement.' Three quick iterations and it's actually his.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Jake got a stiff first draft. What's the BEST move?",
+        "options": [
+          "Restart the chat and try a different prompt",
+          "Iterate — give specific feedback on this draft to refine it",
+          "Accept it as-is",
+          "Write the whole thing himself"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Iteration is faster and more reliable than starting over. Specific feedback ('cut 30 words, make this more personal') refines the draft in seconds — much better than gambling on a new starting prompt.",
+        "airaFeedback": {
+          "correct": "Yes. Refine in place — don't start over and lose your progress.",
+          "incorrect": "Starting over is wasteful. Iterate on the draft you have — it's almost always faster and produces better results."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "It's better to keep iterating on a draft than to throw it out and start fresh.",
+        "correctAnswer": true,
+        "explanation": "Iteration preserves the parts that work and refines the parts that don't. Starting fresh loses everything and gambles on a new outcome. Iteration almost always wins.",
+        "airaFeedback": {
+          "correct": "Right. Refinement compounds. Restarting resets.",
+          "incorrect": "Each iteration builds on what's working. Starting over throws away your progress and gambles on a new draft."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which iteration request is the MOST effective?",
+        "options": [
+          "Make it better",
+          "Cut the second paragraph in half and make the tone warmer",
+          "I don't like it",
+          "Try again"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Specific iteration requests — what to change, where, and how — produce useful refinements. Vague feedback like 'make it better' just tells the AI to guess.",
+        "airaFeedback": {
+          "correct": "Specific feedback gets specific improvements. Vague feedback gets vague rewrites.",
+          "incorrect": "The AI can't act on 'make it better.' Tell it WHAT to change, WHERE, and HOW. Specifics get specifics."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The first AI response is best treated as a _____, not a final answer.",
+        "correctAnswer": "draft",
+        "explanation": "Treating the first answer as a draft sets you up to refine it. Treating it as final means you accept its weaknesses or throw it out. Drafts compound; finals don't.",
+        "airaFeedback": {
+          "correct": "Draft. The mindset shift that changes everything.",
+          "incorrect": "We're looking for the word that means an early version you plan to refine."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Imagine you got a draft email back from the AI that was too long and too formal. Write your iteration request — one sharp follow-up to fix it.",
+        "correctAnswer": ["shorter", "casual", "tone"],
+        "explanation": "A strong version: 'Cut this in half — aim for under 80 words. Keep the main ask but make the tone warmer and more casual, like talking to a colleague you actually like.' Specific length, specific tone, specific feeling.",
+        "airaFeedback": {
+          "correct": "Sharp. Length, tone, target — three specifics that give the AI everything it needs.",
+          "incorrect": "Be specific about WHAT to change. Length? Tone? Both? Tell the AI exactly which dial to turn."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_025",
+    "title": "Image generators: a different kind of conversation",
+    "topic": "Tools",
+    "difficulty": 2,
+    "description": "Midjourney, DALL-E, and the new wave of image AI follow different rules than chat. Learn how to prompt with your eyes, not your ears.",
+    "airaIntro": "Image generators are a different beast. They don't read sentences the way chat AI does — they read keywords, modifiers, and visual references. Your prompt is more like a stage direction than a question.",
+    "airaOutro": "Image prompts are written for the eye, not the ear. Subject, style, lighting, mood, composition — each one is a dial you control.",
+    "realWorldScenario": "Lin wants a hero image for her travel blog. She types 'travel photo' — gets generic stock. She tries: 'A solo female traveler in a yellow raincoat walking through narrow Tokyo alley at golden hour, photographed in cinematic style, soft rain, neon reflections, shot on 35mm film.' Now she's getting art.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Why does Lin's second prompt produce dramatically better images?",
+        "options": [
+          "It's longer",
+          "It specifies subject, setting, lighting, style, and mood — visual details the model can actually act on",
+          "It uses fancier words",
+          "It mentions a camera"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Image models translate visual specifics into pixels. Subject, setting, lighting, style, mood, composition — every detail you add gives the model another visual decision to make right.",
+        "airaFeedback": {
+          "correct": "Exactly. Image prompts are about giving the model visual decisions to make — every detail is a dial.",
+          "incorrect": "It's not the length — it's the visual specifics. Subject, lighting, style, mood. Each detail is a decision the model takes from you."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Image generators interpret natural-language sentences the same way chat AI does.",
+        "correctAnswer": false,
+        "explanation": "Image models read prompts more like visual keywords than natural sentences. They respond strongly to style references, descriptive modifiers, and concrete visual nouns — and they often ignore conversational filler.",
+        "airaFeedback": {
+          "correct": "Right. Different model, different language. Treat image prompts like visual keywords, not chat.",
+          "incorrect": "Image models read prompts very differently from chat models. They respond to visual keywords, not conversational sentences."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which is the MOST useful element to add to an image prompt?",
+        "options": [
+          "Please and thank you",
+          "Style references like 'oil painting,' 'cinematic,' or 'Studio Ghibli'",
+          "Long backstory",
+          "Polite framing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Style references compress massive visual decisions into a few words. 'Oil painting' tells the model about color, texture, lighting, and composition all at once. They're the fastest way to control look and feel.",
+        "airaFeedback": {
+          "correct": "Style references are leverage. Two words can shift the entire look.",
+          "incorrect": "Style references — like 'cinematic' or 'oil painting' — pack massive visual instructions into a few words. They're the highest-leverage thing you can add."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Image prompts are written for the _____, not the ear.",
+        "correctAnswer": "eye",
+        "explanation": "Chat prompts read like sentences. Image prompts read like visual stage directions — every word evokes something to see.",
+        "airaFeedback": {
+          "correct": "Eye. The whole mindset shift in one word.",
+          "incorrect": "Image prompts are about what you SEE. Think in visual terms, not conversational ones."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write an image prompt for a portrait of a wise older woman, including subject, setting, lighting, and style.",
+        "correctAnswer": ["woman", "lighting", "style"],
+        "explanation": "A strong version: 'Portrait of a wise older woman with silver hair and weathered hands, sitting by a window in a sunlit Mediterranean kitchen, soft morning light, warm tones, painted in the style of a Vermeer interior.' Subject, setting, lighting, style — all four dials set.",
+        "airaFeedback": {
+          "correct": "Beautiful. Each detail is a deliberate choice — that's how you make image AI yours.",
+          "incorrect": "Try naming all four: who/what (subject), where (setting), how it's lit (lighting), and the visual style. Each is a dial you control."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_026",
+    "title": "Voice and audio: the AI sound studio",
+    "topic": "Tools",
+    "difficulty": 3,
+    "description": "ElevenLabs, Whisper, and the new voice tools open up an entirely new way to work — listening and speaking, not just typing.",
+    "airaIntro": "Most people only think about AI as text. But voice tools — generating speech, transcribing audio, even cloning voices — are where some of the most surprising productivity lives. Especially if you're not at a keyboard.",
+    "airaOutro": "Voice AI quietly removes the keyboard. Walk and dictate. Convert podcasts to text. Generate narration in seconds. The fastest interface is sometimes no interface at all.",
+    "realWorldScenario": "Daniel commutes 40 minutes each way. He used to lose that time. Now he records voice memos describing his project ideas, runs them through Whisper to transcribe, and feeds the transcripts to ChatGPT to organize. His commute became his most creative hour of the day.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What does Whisper do?",
+        "options": [
+          "Generates speech from text",
+          "Transcribes spoken audio into accurate written text",
+          "Translates languages in real time on video calls",
+          "Removes background noise from recordings"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Whisper is OpenAI's speech-to-text model. It takes audio in (your voice, a podcast, a meeting recording) and gives you accurate text out — across many languages and accents.",
+        "airaFeedback": {
+          "correct": "Yes. Audio in, text out. The bridge between speaking and typing.",
+          "incorrect": "Whisper goes the OTHER direction — it listens to audio and writes down what was said. Speech to text."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Voice generation tools like ElevenLabs can produce speech that sounds nearly indistinguishable from a real person.",
+        "correctAnswer": true,
+        "explanation": "Modern voice models can match tone, emotion, and even specific voices with eerie accuracy. That makes them powerful for creators — and a real concern for misinformation. Both things are true.",
+        "airaFeedback": {
+          "correct": "Right. The realism is genuinely impressive — and worth being thoughtful about.",
+          "incorrect": "Voice generation has gotten very good very fast. The output is nearly indistinguishable from real speech in most cases."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's a high-leverage use of voice transcription for everyday work?",
+        "options": [
+          "Replacing your keyboard entirely",
+          "Capturing ideas while walking, driving, or away from a screen — then refining the text later",
+          "Singing instead of typing",
+          "Translating menus"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Voice capture removes the friction between thought and text. Walks, commutes, and shower thoughts become usable raw material. The refinement step happens later, at a keyboard.",
+        "airaFeedback": {
+          "correct": "Yes. Voice for capture, keyboard for refinement. Best of both.",
+          "incorrect": "The big unlock is capturing ideas when you're NOT at a screen — then refining them later. It turns dead time into thinking time."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "Whisper takes audio in and produces _____ out.",
+        "correctAnswer": "text",
+        "explanation": "Whisper is a speech-to-text model. Audio goes in; written text comes out. It's how you bridge spoken language into the typed AI workflow.",
+        "airaFeedback": {
+          "correct": "Text. Audio's bridge to everything else.",
+          "incorrect": "Think about what speech-to-text means — speech goes in, what comes out?"
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Describe a personal workflow where voice AI tools could save you significant time. Include the specific tool and the situation.",
+        "correctAnswer": ["voice", "use", "time"],
+        "explanation": "A strong version: 'I'd use Whisper to transcribe my weekly 1:1 meetings, then feed the transcript to ChatGPT to extract action items and decisions. Saves me from taking notes during the meeting and lets me actually listen.' Specific tool, specific situation, specific gain.",
+        "airaFeedback": {
+          "correct": "Concrete and useful. That's the right way to think about new tools — what specific time would they give you back?",
+          "incorrect": "Try naming a real moment in your week where speaking would be faster than typing — meetings, commutes, brainstorms. What tool would fit, and what would you do with the output?"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_027",
+    "title": "Choosing the right tool for the job",
+    "topic": "Tools",
+    "difficulty": 3,
+    "description": "There's no 'best AI.' Different tools are sharp at different things. Knowing which to reach for is half the skill.",
+    "airaIntro": "People ask 'which AI is best?' all the time. The real answer is: best for what? A great writer is bad at math. A great coder is bad at jokes. The skill isn't picking one tool — it's matching tool to task.",
+    "airaOutro": "Stop loyalty to one model. Build a small toolkit and reach for the right one. Five minutes of tool-matching saves hours of fighting with the wrong choice.",
+    "realWorldScenario": "Emma has a busy week. For her marketing copy, she uses Claude (warm, natural prose). For research with sources, Perplexity. For coding, Cursor. For brainstorms, ChatGPT. For images, Midjourney. None of these tools is 'best' in general — but each is best for one thing.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "Why is asking 'which AI is the best?' the wrong question?",
+        "options": [
+          "Because all AIs are equally good",
+          "Because different AIs are sharp at different tasks — the right question is 'best for what?'",
+          "Because the answer changes daily",
+          "Because no one can agree"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Different AIs have real strengths and weaknesses. Some are better at code; others at warm prose; others at search. Asking 'best for what' turns a religious debate into a practical decision.",
+        "airaFeedback": {
+          "correct": "Yes. 'Best for what' is the only question that produces a useful answer.",
+          "incorrect": "There is no universal 'best.' Different tools are sharp at different things — the real question is best FOR WHAT TASK."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "It's a power move to use multiple AI tools, picking the right one for each task.",
+        "correctAnswer": true,
+        "explanation": "A toolkit beats a tool. The friction of switching is small; the gain from using each tool's strength is big. Pros use 3-5 different AIs in a normal week.",
+        "airaFeedback": {
+          "correct": "Right. Toolkit thinking, not tool loyalty.",
+          "incorrect": "Treating AI as a toolkit instead of a single tool is one of the biggest leaps you can make. Pros use multiple AIs every week."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which tool would you reach for if you needed RECENT, SOURCED information for a research task?",
+        "options": [
+          "ChatGPT with no plugins",
+          "Perplexity, because it cites sources and searches the live web",
+          "Midjourney",
+          "Whisper"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Perplexity is purpose-built for sourced research with live web access. Standard chat AIs may have stale training data and tend to hallucinate sources. Pick the tool whose strength matches the task.",
+        "airaFeedback": {
+          "correct": "Yes. Match the tool's strength to the task. Perplexity for sources, every time.",
+          "incorrect": "For research with real sources, you want a tool that searches the live web and cites — Perplexity is the obvious pick."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "There is no 'best AI.' The skill is matching tool to _____.",
+        "correctAnswer": "task",
+        "explanation": "Tools have strengths. Tasks have shapes. The skill is matching the strength to the shape. That's the whole game.",
+        "airaFeedback": {
+          "correct": "Task. The shift from picking one to choosing on the fly.",
+          "incorrect": "We're looking for what changes from one job to the next — what you're trying to do."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Describe your own ideal mini AI toolkit: name 2-3 tools and what you'd use each one for.",
+        "correctAnswer": ["use", "for", "tool"],
+        "explanation": "A strong version: 'Claude for long-form writing because the prose feels human. Perplexity for fact-checking and research because it cites sources. Midjourney for images because the aesthetic control is unmatched.' Each tool, each strength, each use case.",
+        "airaFeedback": {
+          "correct": "That's a real toolkit, with a real reason for each piece. Now go build the habit of reaching for the right one.",
+          "incorrect": "Pick 2-3 tools you've used or want to try, and for each one, name the SPECIFIC task you'd reach for it. Tool + reason + use case."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_028",
+    "title": "Designing a system prompt that becomes your daily assistant",
+    "topic": "Creating",
+    "difficulty": 4,
+    "description": "Stop starting from scratch every time. A well-designed system prompt turns a generic AI into your personal collaborator.",
+    "airaIntro": "Here's where things get serious. A system prompt is the AI's persistent context — who it is, how it should think, how it should talk to you. Set it once, and every conversation starts already tuned to you.",
+    "airaOutro": "The system prompt is your most leveraged piece of writing. Five sentences, written once, that shape thousands of future conversations. Iterate on it like it matters — because it does.",
+    "realWorldScenario": "Naomi is a product designer drowning in feedback emails. She sets up a Claude project with a system prompt: 'You are my writing assistant. I'm a product designer. Keep responses under 100 words unless I ask for more. Default to plain English. Never use bullet points unless I ask. Always end with one clarifying question.' Now every chat starts perfect. No more re-explaining herself.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What is a system prompt?",
+        "options": [
+          "A bug fix",
+          "A persistent set of instructions that defines how the AI should behave across an entire conversation or project",
+          "A secret password",
+          "An error message"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A system prompt sits 'above' your normal messages — it tells the AI who it is, how to respond, and what rules to follow. Every message in the conversation inherits it.",
+        "airaFeedback": {
+          "correct": "Yes. Persistent context. Set once, applies to everything.",
+          "incorrect": "A system prompt is the persistent instructions the AI follows for the whole conversation — its identity and ground rules."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "A good system prompt should include WHO the AI is, HOW it should respond, and WHAT rules to follow.",
+        "correctAnswer": true,
+        "explanation": "Identity, behavior, and constraints are the three pillars of a useful system prompt. Skip any one of them and the AI defaults back to its generic behavior on that dimension.",
+        "airaFeedback": {
+          "correct": "Right. Three pillars: identity, behavior, constraints.",
+          "incorrect": "All three matter. Identity sets context, behavior shapes style, constraints prevent unwanted defaults."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which is the SHARPEST system prompt?",
+        "options": [
+          "You are a helpful assistant.",
+          "You are my writing collaborator. I'm a product manager. Default to plain English under 150 words. Never use bullet points unless I ask. End every response with one clarifying question.",
+          "Be smart and good.",
+          "You are an AI."
+        ],
+        "correctAnswer": 1,
+        "explanation": "The second prompt sets identity (writing collaborator), audience (product manager), behavior (plain English, length limit), constraints (no bullets), and a habit (clarifying question). Every word does work.",
+        "airaFeedback": {
+          "correct": "Every word does work in that prompt. That's the bar.",
+          "incorrect": "The second one specifies identity, audience, default behavior, a constraint, and a habit. That's what a real system prompt looks like."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "A system prompt is the AI's _____ context — instructions that apply across the whole conversation.",
+        "correctAnswer": "persistent",
+        "explanation": "Persistent means it doesn't go away after one message. The system prompt sets the stage for every reply that follows.",
+        "airaFeedback": {
+          "correct": "Persistent. The thing that sticks.",
+          "incorrect": "We're looking for the word that means 'sticking around for the whole conversation' — not just one turn."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Write your own personal system prompt for a writing assistant. Include: who the AI is, who YOU are, default style, and at least one constraint.",
+        "correctAnswer": ["you", "i", "default"],
+        "explanation": "A strong version: 'You are my writing assistant. I'm a freelance copywriter who works with B2B SaaS clients. Default to short, punchy sentences. Avoid corporate buzzwords entirely. Always offer me 2 options instead of 1, and ask me which direction I prefer.' Every line earns its place.",
+        "airaFeedback": {
+          "correct": "That's a real system prompt — the kind you can set once and use a hundred times.",
+          "incorrect": "Make sure your prompt covers all four: who the AI is, who you are, what style to default to, and one specific constraint or habit."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_029",
+    "title": "Building workflows: chaining AI into real systems",
+    "topic": "Creating",
+    "difficulty": 4,
+    "description": "The biggest wins come from connecting AI to your other tools — not from one-off chats. Workflows are where AI becomes leverage.",
+    "airaIntro": "We've talked about prompts and tools. Now the next level: workflows. Connecting AI to your calendar, your notes, your inbox, your code editor — so the AI works WITH your other tools instead of in a separate window.",
+    "airaOutro": "A workflow is a system you build once and use forever. The first one feels like overkill. The hundredth time it runs itself, you'll wonder how you lived without it.",
+    "realWorldScenario": "Felix wastes 20 minutes a day writing meeting summaries. He builds a workflow: Otter records the meeting, Whisper transcribes it, Claude summarizes with action items in a fixed format, Notion drops the summary into the right project page automatically. What used to be 20 minutes is now 0. The system runs itself.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the difference between using AI in chats vs building an AI workflow?",
+        "options": [
+          "Workflows are more expensive",
+          "A workflow connects AI to your other tools so the work happens automatically — chats require you each time",
+          "Workflows are slower",
+          "Chats are smarter than workflows"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Chats are manual — you show up, type, get a response. Workflows are systems — they connect AI to other tools so the work runs without you. The leverage curve bends sharply once you build your first one.",
+        "airaFeedback": {
+          "correct": "Yes. Chat is doing the work. Workflows are systems that do the work for you.",
+          "incorrect": "The key difference is that workflows AUTOMATE the loop — AI works alongside your other tools without you having to drive each step."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Workflows are only worth building for tasks you do repeatedly.",
+        "correctAnswer": true,
+        "explanation": "Workflows take time to set up. The payoff comes from running them many times. For one-off tasks, just use chat. For things you do every week, the workflow pays for itself fast.",
+        "airaFeedback": {
+          "correct": "Right. Repetition is the rule. One-time tasks aren't worth automating.",
+          "incorrect": "Workflows have setup cost. The payoff is in repetition — they're worth it for things you do over and over, not for one-offs."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "What's a smart way to spot a task that's WORTH building a workflow for?",
+        "options": [
+          "If it's hard",
+          "If you do it weekly, the steps are roughly the same each time, and it eats noticeable time",
+          "If your boss told you to",
+          "If it sounds impressive"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Repeatable + similar steps + meaningful time cost = workflow candidate. If any of those three are missing, the workflow probably isn't worth the setup. If all three are there, it almost always is.",
+        "airaFeedback": {
+          "correct": "Three checks. If they all hit, build the workflow. Today.",
+          "incorrect": "The three signs: it repeats, the steps are similar each time, and it eats meaningful time. All three together = build it."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "A workflow connects AI to your other _____ so the work happens automatically.",
+        "correctAnswer": "tools",
+        "explanation": "AI on its own is powerful. AI connected to your calendar, notes, inbox, and editor is transformative. The connection is what turns chat into a system.",
+        "airaFeedback": {
+          "correct": "Tools. The connection is the leverage.",
+          "incorrect": "Workflows are about connecting AI to the OTHER things you use — your calendar, your notes, your editor. What's the word for those?"
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "Describe one repetitive task in your work or life that you could turn into an AI workflow. Include the input, the AI step, and the output destination.",
+        "correctAnswer": ["task", "ai", "output"],
+        "explanation": "A strong version: 'Every Friday I write a weekly update for my team. Workflow: grab my completed Linear tickets (input), feed them to Claude with a fixed format prompt (AI step), drop the output into our Slack #weekly channel (destination).' Every step named.",
+        "airaFeedback": {
+          "correct": "That's a real workflow you could actually build. Notice how naming the steps already makes it feel doable.",
+          "incorrect": "Pick something you do repeatedly and break it down into three parts: what data goes IN, what AI does to it, and where the output GOES."
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson_030",
+    "title": "AI as a thinking partner, not a vending machine",
+    "topic": "Creating",
+    "difficulty": 5,
+    "description": "The deepest shift isn't about getting answers faster. It's about using AI to think better — together.",
+    "airaIntro": "We're at the end of the curriculum, and I want to leave you with the biggest mindset shift of all. Most people use AI like a vending machine: insert question, receive answer. But the real magic is using AI as a thinking partner — something to bounce ideas off, to argue with, to push your own thinking further than you could alone.",
+    "airaOutro": "You've come a long way. From 'tell me about Japan' to designing your own workflows. But the best part isn't the techniques — it's that you can now think WITH AI, not just THROUGH it. That's a different kind of mind. Keep going.",
+    "realWorldScenario": "Marcus is stuck on a career decision. He doesn't ask the AI for the answer. Instead: 'I want to think this through out loud with you. I'll lay out my situation. I want you to ask me 5 sharp questions before suggesting anything. Then push back on my reasoning where it's weakest.' Two hours later, the decision is clear — but the answer was always inside Marcus. The AI helped him find it.",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple_choice",
+        "question": "What's the difference between using AI as a vending machine vs as a thinking partner?",
+        "options": [
+          "Vending machines are slower",
+          "A vending machine gives you answers; a thinking partner helps you reach better answers yourself",
+          "Thinking partners cost more",
+          "There is no difference"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vending-machine use treats AI as a source of answers. Thinking-partner use treats AI as a collaborator that helps you think more clearly than you would alone. The first is convenient; the second is transformative.",
+        "airaFeedback": {
+          "correct": "Yes. Convenience vs transformation. Both are valid — but only one changes how you think.",
+          "incorrect": "The vending machine gives you AN answer. The thinking partner helps you find a BETTER answer than you'd reach alone. Big difference."
+        }
+      },
+      {
+        "id": "q2",
+        "type": "true_false",
+        "question": "Asking the AI to question YOUR thinking is sometimes more valuable than asking it for an answer.",
+        "correctAnswer": true,
+        "explanation": "The AI can ask better questions than most people in your life. Used well, it surfaces your blind spots, exposes weak reasoning, and forces you to clarify what you actually believe. That's worth more than any answer.",
+        "airaFeedback": {
+          "correct": "Right. Sometimes the most valuable answer is a better question.",
+          "incorrect": "AI asking YOU questions can surface blind spots and weak reasoning that no one else in your life ever calls out. It's underrated."
+        }
+      },
+      {
+        "id": "q3",
+        "type": "multiple_choice",
+        "question": "Which kind of question turns AI from a vending machine into a thinking partner?",
+        "options": [
+          "What's the answer?",
+          "Ask me 5 sharp questions before you give me your view, then push back on my reasoning",
+          "Tell me what to do",
+          "Give me the answer fast"
+        ],
+        "correctAnswer": 1,
+        "explanation": "When you ask the AI to interrogate YOU first, you flip the dynamic. The AI becomes a collaborator surfacing your blind spots instead of a oracle pronouncing answers. That's the shift.",
+        "airaFeedback": {
+          "correct": "That's the shift. Ask the AI to think WITH you, not FOR you.",
+          "incorrect": "Look for the prompt that asks the AI to question YOU instead of just answering. Reversing the direction is the whole trick."
+        }
+      },
+      {
+        "id": "q4",
+        "type": "fill_blank",
+        "question": "The deepest use of AI isn't getting answers faster — it's thinking _____.",
+        "correctAnswer": "better",
+        "explanation": "Speed is the obvious gain. Thinking better is the deep one. The first you notice in a week. The second changes you over years.",
+        "airaFeedback": {
+          "correct": "Better. The quiet upgrade you'll feel for years.",
+          "incorrect": "Speed is the obvious gain — but the deeper one is about the QUALITY of your thinking, not just how fast you get answers."
+        }
+      },
+      {
+        "id": "q5",
+        "type": "prompt_write",
+        "question": "You've reached the end of this curriculum. Write a short note to your future self about how you'll use AI from now on — what you'll do differently after this lesson.",
+        "correctAnswer": ["i", "use", "will"],
+        "explanation": "There's no single right answer here. A strong version is honest, specific, and personal — naming one habit you'll start, one mistake you'll stop, or one mindset shift you'll keep. The act of writing it makes it more likely to stick.",
+        "airaFeedback": {
+          "correct": "I hope you mean it. Re-read this in a month. See what's true. I'm quietly proud of you for finishing — keep going.",
+          "incorrect": "Take a moment with this one. It's not about a right answer — it's about what genuinely changed for you. What will you actually do differently?"
+        }
+      }
+    ]
+  }
+]

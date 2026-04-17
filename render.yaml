@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aira-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: LEMON_SQUEEZY_CHECKOUT_URL
+        sync: false
+      - key: LEMON_SQUEEZY_WEBHOOK_SECRET
+        sync: false
+      - key: ADMIN_KEY
+        sync: false

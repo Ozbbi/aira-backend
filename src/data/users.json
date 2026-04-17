@@ -1,0 +1,97 @@
+[
+  {
+    "id": "eydkZyDLJ166l4z268HSk",
+    "name": "Alex",
+    "email": "alex@test.com",
+    "xp": 75,
+    "level": 2,
+    "streak": 1,
+    "lastActiveDate": "2026-04-13",
+    "tier": "free",
+    "lessonsCompletedToday": 1,
+    "totalLessonsCompleted": 1,
+    "accuracyHistory": [
+      100
+    ],
+    "createdAt": "2026-04-13T17:38:26.041Z"
+  },
+  {
+    "id": "A-8BMglf_8kJb_LBKAgQM",
+    "name": "Smoke Test",
+    "email": null,
+    "xp": 340,
+    "level": 3,
+    "streak": 1,
+    "lastActiveDate": "2026-04-14",
+    "tier": "free",
+    "lessonsCompletedToday": 5,
+    "totalLessonsCompleted": 5,
+    "accuracyHistory": [
+      80,
+      100,
+      100,
+      100,
+      100
+    ],
+    "completedLessonIds": [
+      "lesson_001",
+      "lesson_002",
+      "lesson_003",
+      "lesson_004",
+      "lesson_005"
+    ],
+    "createdAt": "2026-04-14T19:26:15.027Z"
+  },
+  {
+    "id": "KsHu0cdUWcnXRVDhYpupY",
+    "name": "Profile Test",
+    "email": null,
+    "xp": 115,
+    "level": 2,
+    "streak": 1,
+    "lastActiveDate": "2026-04-14",
+    "tier": "free",
+    "lessonsCompletedToday": 2,
+    "totalLessonsCompleted": 2,
+    "accuracyHistory": [
+      80,
+      100
+    ],
+    "completedLessonIds": [
+      "lesson_001",
+      "lesson_002"
+    ],
+    "createdAt": "2026-04-14T19:31:59.044Z"
+  },
+  {
+    "id": "PuQWVYIc_prgsiQBMQNUt",
+    "name": "Curriculum Test",
+    "email": null,
+    "xp": 0,
+    "level": 1,
+    "streak": 0,
+    "lastActiveDate": null,
+    "tier": "free",
+    "lessonsCompletedToday": 0,
+    "totalLessonsCompleted": 0,
+    "accuracyHistory": [],
+    "completedLessonIds": [],
+    "createdAt": "2026-04-14T19:45:31.964Z"
+  },
+  {
+    "id": "XksCILzhsmeJQ2QeyYUtx",
+    "name": "Auth Test",
+    "email": "authtest@aira.app",
+    "passwordHash": "$2b$10$6NQ9pfqR5DbUEgiePeQfV.IjqV3tc7XCR18xuOYwoJ0WGoII6NLqC",
+    "xp": 0,
+    "level": 1,
+    "streak": 0,
+    "lastActiveDate": null,
+    "tier": "free",
+    "lessonsCompletedToday": 0,
+    "totalLessonsCompleted": 0,
+    "accuracyHistory": [],
+    "completedLessonIds": [],
+    "createdAt": "2026-04-15T15:29:21.406Z"
+  }
+]
