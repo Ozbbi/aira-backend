@@ -2,3 +2,7 @@ node_modules
 .env
 *.log
 .DS_Store
+
+# Runtime data — the empty [] baseline is committed once; future local/prod
+# changes stay out of git (real backend uses Render's disk or a DB eventually).
+src/data/users.json
