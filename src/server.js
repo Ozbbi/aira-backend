@@ -10,6 +10,7 @@ const lessonRoutes = require('./routes/lessons');
 const progressRoutes = require('./routes/progress');
 const authRoutes = require('./routes/auth');
 const paymentRoutes = require('./routes/payments');
+const curriculumRoutes = require('./routes/curriculum');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,8 +22,12 @@ const PORT = process.env.PORT || 3000;
 const ALLOWED_ORIGIN_PATTERNS = [
   /^http:\/\/localhost(:\d+)?$/,
   /^http:\/\/127\.0\.0\.1(:\d+)?$/,
+  /^https:\/\/airamentor\.com$/,
+  /^https:\/\/www\.airamentor\.com$/,
+  /^https:\/\/app\.airamentor\.com$/,
   /^https:\/\/aira-website-ten\.vercel\.app$/,
   /^https:\/\/aira-app\.vercel\.app$/,
+  /^https:\/\/aira-app-gamma\.vercel\.app$/,
   /^https:\/\/.*\.vercel\.app$/,
 ];
 app.use(
@@ -59,6 +64,8 @@ app.use('/api/users', userRoutes);
 app.use('/api/lessons', lessonRoutes);
 app.use('/api/progress', progressRoutes);
 app.use('/api/payments', paymentRoutes);
+// New curriculum/tracks endpoints mount at /api/* (not under /api/lessons)
+app.use('/api', curriculumRoutes);
 
 // Health check
 app.get('/', (req, res) => {

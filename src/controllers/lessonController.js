@@ -16,23 +16,17 @@ async function generateLesson(req, res) {
 
   resetDailyIfNeeded(user);
 
-  // Check daily limit for free users
-  const dailyLimit = user.tier === 'pro' ? Infinity : 5;
-  if (user.lessonsCompletedToday >= dailyLimit) {
-    return res.status(402).json({
-      error: 'daily_limit_reached',
-      message: 'Upgrade to Pro for unlimited lessons',
-      upgradeUrl: '/pro',
-    });
-  }
-
   const lessons = await readLessons();
   const { minDifficulty, maxDifficulty } = pickDifficulty(user);
 
-  // Filter lessons by difficulty range and optional topic
+  // Filter lessons by difficulty range and optional topic. Demo users only
+  // get lessons tagged tier='demo' — the rest require Pro.
   let candidates = lessons.filter(
     (l) => l.difficulty >= minDifficulty && l.difficulty <= maxDifficulty
   );
+  if (user.tier !== 'pro') {
+    candidates = candidates.filter((l) => (l.tier || 'demo') === 'demo');
+  }
 
   if (topic) {
     const topicLower = topic.toLowerCase();
@@ -169,24 +163,32 @@ async function getLessonById(req, res) {
     return res.status(404).json({ error: 'Lesson not found' });
   }
 
-  // Enforce daily limit when a userId is provided. We allow already-completed
-  // lessons to be replayed even at the limit (replays don't count toward daily).
+  // Tier gate: demo users can only access lessons marked tier='demo'.
+  // Anything else returns 402 so the mobile app can route to the paywall.
   const userId = req.query.userId;
+  const lessonTier = lesson.tier || 'demo';
   if (userId) {
     const users = await readUsers();
     const user = users.find((u) => u.id === userId);
     if (user) {
       resetDailyIfNeeded(user);
-      const dailyLimit = user.tier === 'pro' ? Infinity : 5;
-      const alreadyCompleted = user.completedLessonIds.includes(lesson.id);
-      if (!alreadyCompleted && user.lessonsCompletedToday >= dailyLimit) {
+      if (lessonTier === 'pro' && user.tier !== 'pro') {
         return res.status(402).json({
-          error: 'daily_limit_reached',
-          message: 'Upgrade to Pro for unlimited lessons',
+          error: 'pro_required',
+          message: 'This lesson is part of AIRA Pro.',
+          trackId: lesson.trackId || null,
           upgradeUrl: '/pro',
         });
       }
     }
+  } else if (lessonTier === 'pro') {
+    // Anonymous request for a Pro lesson.
+    return res.status(402).json({
+      error: 'pro_required',
+      message: 'This lesson is part of AIRA Pro.',
+      trackId: lesson.trackId || null,
+      upgradeUrl: '/pro',
+    });
   }
 
   res.json({
